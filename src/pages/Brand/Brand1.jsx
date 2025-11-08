@@ -65,7 +65,7 @@ const Brand1 = () => {
                 <meta property="og:title" content="이천 롯데캐슬 3차 - 브랜드 소개" />
                 <meta
                     property="og:description"
-                    content="한양수자인 브랜드 소개: 고객 중심 철학과 프리미엄 품질 기준, 공원 특화 설계로 완성하는 새로운 주거 기준."
+                    content="한양수자인 브랜드 소개: 고객 중심 철학과의 프리미엄 품질 기준, 공원 특화 설계로 완성하는 새로운 주거 기준."
                 />
                 <meta property="og:url" content="https://arbore-cheongju.com/brand/intro" />
                 {/* 이미지 경로는 실제 배포 경로에 맞게 교체 권장 */}
