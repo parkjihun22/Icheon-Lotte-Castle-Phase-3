@@ -53,7 +53,7 @@ const Brand1 = () => {
     name="description"
     content="롯데건설 롯데캐슬(CASTLE)의 브랜드 철학과 가치를 소개합니다. 프리미엄 품질 기준과 첨단 시스템, 커뮤니티 설계로 미래의 주거 가치를 제시하는 이천 롯데캐슬 3차."
   />
-  <link rel="canonical" href="https://lotte-castl.co.kr/Brand/intro" />
+  <link rel="canonical" href="https://www.lotte-castl.co.kr/Brand/intro" />
   <meta name="robots" content="index,follow" />
 
   {/* Open Graph */}
@@ -64,8 +64,8 @@ const Brand1 = () => {
     property="og:description"
     content="롯데캐슬 브랜드 소개: 프리미엄 주거문화와 고객 중심 설계, 고급 자재·첨단 시스템을 담은 이천 롯데캐슬 3차의 철학을 소개합니다."
   />
-  <meta property="og:url" content="https://lotte-castl.co.kr/Brand/intro" />
-  <meta property="og:image" content="https://lotte-castl.co.kr/images/og/main.jpg" />
+  <meta property="og:url" content="https://www.lotte-castl.co.kr/Brand/intro" />
+  <meta property="og:image" content="https://www.lotte-castl.co.kr/images/og/main.jpg" />
 </Helmet>
 
 <Header isChanged={isScroll} />

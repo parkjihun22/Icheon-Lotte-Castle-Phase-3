@@ -51,7 +51,7 @@ const LocationEnvironment1 = () => {
     name="description"
     content="이천 롯데캐슬 3차 프리미엄을 확인하세요. 1,325세대 브랜드 대단지, 지상 차 없는 공원형 단지, 중부고속도로 및 송정IC 접근성, 특화 커뮤니티와 설봉공원·이천온천 등 자연환경의 핵심 가치를 안내합니다."
   />
-  <link rel="canonical" href="https://lotte-castl.co.kr/LocationEnvironment/primium" />
+  <link rel="canonical" href="https://www.lotte-castl.co.kr/LocationEnvironment/primium" />
   <meta name="robots" content="index,follow" />
 </Helmet>
 

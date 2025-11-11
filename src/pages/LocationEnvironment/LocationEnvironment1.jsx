@@ -102,7 +102,7 @@ const LocationEnvironment1 = () => {
     content="이천 도심 중심 입지, 이천 롯데캐슬 3차의 입지환경을 확인하세요. 중부고속도로·송정IC, 이천시청·이마트·종합병원 등 생활 인프라와 설봉공원·온천 등 자연환경까지."
   />
   <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://lotte-castl.co.kr/LocationEnvironment/intro" />
+  <link rel="canonical" href="https://www.lotte-castl.co.kr/LocationEnvironment/intro" />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
@@ -112,8 +112,8 @@ const LocationEnvironment1 = () => {
     property="og:description"
     content="중부고속도로·송정IC, 이천시청·종합병원·하나로마트 등 생활 인프라와 설봉공원·이천온천까지 누리는 이천 도심 입지의 롯데캐슬 3차."
   />
-  <meta property="og:url" content="https://lotte-castl.co.kr/LocationEnvironment/intro" />
-  <meta property="og:image" content="https://lotte-castl.co.kr/img/og/location.jpg" />
+  <meta property="og:url" content="https://www.lotte-castl.co.kr/LocationEnvironment/intro" />
+  <meta property="og:image" content="https://www.lotte-castl.co.kr/img/og/location.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
@@ -124,8 +124,8 @@ const LocationEnvironment1 = () => {
     name="twitter:description"
     content="이천 도심 입지와 교통·생활 인프라를 두루 갖춘 이천 롯데캐슬 3차의 입지환경을 확인하세요. 송정IC, 중리·마장지구 인접, 공공·자연 인프라까지."
   />
-  <meta name="twitter:image" content="https://lotte-castl.co.kr/img/og/location.jpg" />
-  <meta name="twitter:url" content="https://lotte-castl.co.kr/LocationEnvironment/intro" />
+  <meta name="twitter:image" content="https://www.lotte-castl.co.kr/img/og/location.jpg" />
+  <meta name="twitter:url" content="https://www.lotte-castl.co.kr/LocationEnvironment/intro" />
 
   {/* JSON-LD (대표 이미지/브레드크럼 포함) */}
   <script type="application/ld+json">
@@ -133,20 +133,20 @@ const LocationEnvironment1 = () => {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "이천 롯데캐슬 3차 - 입지환경",
-      "url": "https://lotte-castl.co.kr/LocationEnvironment/intro",
+      "url": "https://www.lotte-castl.co.kr/LocationEnvironment/intro",
       "description":
         "이천시 도심 중심 입지, 송정IC와 중부고속도로 교통망, 이천시청·이마트·이천의료원 등 생활 인프라, 설봉공원과 온천까지 누리는 쾌적한 입지환경.",
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "contentUrl": "https://lotte-castl.co.kr/img/og/location.jpg",
+        "contentUrl": "https://www.lotte-castl.co.kr/img/og/location.jpg",
         "width": 1200,
         "height": 630
       },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://lotte-castl.co.kr/" },
-          { "@type": "ListItem", "position": 2, "name": "입지환경", "item": "https://lotte-castl.co.kr/LocationEnvironment/intro" }
+          { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.lotte-castl.co.kr/" },
+          { "@type": "ListItem", "position": 2, "name": "입지환경", "item": "https://www.lotte-castl.co.kr/LocationEnvironment/intro" }
         ]
       }
     })}

@@ -57,7 +57,7 @@ const ComplexGuide1 = () => {
     name="description"
     content="이천 롯데캐슬 3차 동·호수 배치도를 통해 세대별 위치, 조망, 일조 방향, 프라이버시 고려 설계를 확인하세요. 라인·스택 구성과 코어 동선도 안내합니다."
   />
-  <link rel="canonical" href="https://lotte-castl.co.kr/ComplexGuide/detailintro" />
+  <link rel="canonical" href="https://www.lotte-castl.co.kr/ComplexGuide/detailintro" />
   <meta name="robots" content="index,follow" />
 
   {/* Open Graph */}
@@ -68,8 +68,8 @@ const ComplexGuide1 = () => {
     property="og:description"
     content="세대별 위치, 조망·일조, 프라이버시를 고려한 동·호수 배치를 확인하세요. 라인·스택 구성과 코어 동선도 한눈에 확인 가능합니다."
   />
-  <meta property="og:url" content="https://lotte-castl.co.kr/ComplexGuide/detailintro" />
-  <meta property="og:image" content="https://lotte-castl.co.kr/img/og/complex.jpg" />
+  <meta property="og:url" content="https://www.lotte-castl.co.kr/ComplexGuide/detailintro" />
+  <meta property="og:image" content="https://www.lotte-castl.co.kr/img/og/complex.jpg" />
 </Helmet>
 
 <Header isChanged={isScroll} />

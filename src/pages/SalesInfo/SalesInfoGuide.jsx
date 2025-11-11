@@ -57,7 +57,7 @@ const ComplexGuide1 = () => {
             name="description"
             content="이천 롯데캐슬 3차 청약안내를 한눈에 확인하세요. 특별공급·1·2순위 청약 일정, 자격요건, 필요서류와 인터넷 청약 절차를 안내합니다."
           />
-          <link rel="canonical" href="https://lotte-castl.co.kr/SalesInfo/SubscriptionGuide" />
+          <link rel="canonical" href="https://www.lotte-castl.co.kr/SalesInfo/SubscriptionGuide" />
           <meta name="robots" content="index,follow" />
         </Helmet>
 

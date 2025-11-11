@@ -56,7 +56,7 @@ const ComplexGuide3 = () => {
     name="description"
     content="이천 롯데캐슬 3차의 커뮤니티 시설을 소개합니다. 피트니스센터, 실내 골프연습장, 작은도서관(북카페), 주민 라운지 등 입주민의 생활 품격을 높이는 다양한 편의시설을 만나보세요."
   />
-  <link rel="canonical" href="https://lotte-castl.co.kr/ComplexGuide/community" />
+  <link rel="canonical" href="https://www.lotte-castl.co.kr/ComplexGuide/community" />
   <meta name="robots" content="index,follow" />
 
   {/* Open Graph */}
@@ -67,8 +67,8 @@ const ComplexGuide3 = () => {
     property="og:description"
     content="피트니스·실내골프·작은도서관·라운지 등 다양한 커뮤니티로 일상의 가치를 높이는 이천 롯데캐슬 3차."
   />
-  <meta property="og:url" content="https://lotte-castl.co.kr/ComplexGuide/community" />
-  <meta property="og:image" content="https://lotte-castl.co.kr/img/og/complex.jpg" />
+  <meta property="og:url" content="https://www.lotte-castl.co.kr/ComplexGuide/community" />
+  <meta property="og:image" content="https://www.lotte-castl.co.kr/img/og/complex.jpg" />
 </Helmet>
 
 <Header isChanged={isScroll} />

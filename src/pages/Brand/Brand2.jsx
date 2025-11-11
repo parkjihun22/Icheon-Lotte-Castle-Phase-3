@@ -50,7 +50,7 @@ const Brand2 = () => {
     name="description"
     content="이천 롯데캐슬 3차 홍보영상으로 세대 설계, 지상 차 없는 공원형 단지, 커뮤니티 시설과 이천 도심 생활 인프라·광역 접근성을 생생하게 확인하세요."
   />
-  <link rel="canonical" href="https://lotte-castl.co.kr/Brand/video" />
+  <link rel="canonical" href="https://www.lotte-castl.co.kr/Brand/video" />
   <meta name="robots" content="index,follow" />
 
   {/* OG 태그 */}
@@ -61,8 +61,8 @@ const Brand2 = () => {
     property="og:description"
     content="이천 롯데캐슬 3차 홍보영상: 공원형 단지 설계, 커뮤니티, 이천 도심 인프라와 광역 접근성을 영상으로 만나보세요."
   />
-  <meta property="og:url" content="https://lotte-castl.co.kr/Brand/video" />
-  <meta property="og:image" content="https://lotte-castl.co.kr/images/og/main.jpg" />
+  <meta property="og:url" content="https://www.lotte-castl.co.kr/Brand/video" />
+  <meta property="og:image" content="https://www.lotte-castl.co.kr/images/og/main.jpg" />
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -71,7 +71,7 @@ const Brand2 = () => {
     name="twitter:description"
     content="세대 설계와 커뮤니티, 공원형 단지와 이천 도심 인프라·접근성을 영상으로 확인하세요."
   />
-  <meta name="twitter:image" content="https://lotte-castl.co.kr/images/og/main.jpg" />
+  <meta name="twitter:image" content="https://www.lotte-castl.co.kr/images/og/main.jpg" />
 </Helmet>
 
 <Header isChanged={isScroll} />

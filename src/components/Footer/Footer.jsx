@@ -11,7 +11,7 @@ import InterestPopup from "../InterestPopup/InterestPopup";
 
 // FAMILY SITE 목록 예시
 const partnerSites = [
-  { name: "이천 롯데캐슬 3차", url: "https://lotte-castl.co.kr/" },
+  { name: "이천 롯데캐슬 3차", url: "https://www.lotte-castl.co.kr/" },
 ];
 
 const Footer = () => {

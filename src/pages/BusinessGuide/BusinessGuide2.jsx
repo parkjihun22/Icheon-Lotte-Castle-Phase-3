@@ -56,7 +56,7 @@ const BusinessGuide2 = () => {
     name="description"
     content="이천 롯데캐슬 3차 분양(청약) 일정을 한눈에 확인하세요. 특별공급·1·2순위 접수, 모델하우스 오픈, 당첨자 발표 및 정당계약 등 핵심 일정을 안내합니다."
   />
-  <link rel="canonical" href="https://lotte-castl.co.kr/BusinessGuide/plan" />
+  <link rel="canonical" href="https://www.lotte-castl.co.kr/BusinessGuide/plan" />
   <meta name="robots" content="index,follow" />
 </Helmet>
 
