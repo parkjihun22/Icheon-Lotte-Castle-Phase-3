@@ -31,10 +31,10 @@ const menuArray = [
   {
     title: "분양안내",
     subMenu: [
-      { subTitle: "공급안내", subUrl: "/SalesInfo/guide" },
+      // { subTitle: "청약방법안내", subUrl: "/SalesInfo/SubscriptionGuide" },
+      // { subTitle: "청약안내문", subUrl: "/SalesInfo/guide" },
       { subTitle: "모집공고안내", subUrl: "/SalesInfo/announcement" },
-      // { subTitle: "정당계약안내문", subUrl: "/SalesInfo/SubscriptionGuide" },
-      // { subTitle: "인지세납부안내", subUrl: "/SalesInfo/stampTax" },
+
     ],
   },
   {
@@ -58,20 +58,23 @@ const menuArray = [
       { subTitle: "84A", subUrl: "/FloorPlan/59A" },
       { subTitle: "84B", subUrl: "/FloorPlan/59B" },
       { subTitle: "84C", subUrl: "/FloorPlan/84A" },
-      // { subTitle: "84D", subUrl: "/FloorPlan/84B" },
+      { subTitle: "122", subUrl: "/FloorPlan/84B" },
+      // { subTitle: "84A", subUrl: "/FloorPlan/114A" },
+      // { subTitle: "84C", subUrl: "/FloorPlan/114B" },
       // { subTitle: "E-모델하우스", subUrl: "/FloorPlan/Emodel" },
     ],
   },
-  {
-    title: "인테리어",
-    subMenu: [
-      { subTitle: "84A", subUrl: "/Interior/59A" },
-      { subTitle: "84C", subUrl: "/Interior/84A" },
-    ],
-  },
+  // {
+  //   title: "인테리어",
+  //   subMenu: [
+  //     { subTitle: "59A", subUrl: "/Interior/59A" },
+  //     { subTitle: "72B", subUrl: "/Interior/84A" },
+  //   ],
+  // },
   {
     title: "홍보센터",
     subMenu: [
+      // { subTitle: "언론보도", subUrl: "/Promotion/Press" },
       { subTitle: "관심고객등록", subUrl: "/Promotion/Customer" },
     ],
   },
@@ -106,9 +109,9 @@ export default function Header() {
         <div className={styles.mobileHeader}>
           <div onClick={() => setIsMobileMenu((v) => !v)}>
             {!isMobileMenu ? (
-              <AiOutlineMenu className={styles.icon} size={25} color="#055f05" />
+              <AiOutlineMenu className={styles.icon} size={25} color="#7e0624" />
             ) : (
-              <IoCloseSharp className={styles.icon} size={25} color="#055f05" />
+              <IoCloseSharp className={styles.icon} size={25} color="#7e0624" />
             )}
           </div>
           {isMobileMenu && (
@@ -122,7 +125,7 @@ export default function Header() {
             <img src={mainlogowhite} alt="Logo" className={styles.logo} />
           </Link>
           <a href="tel:1533-8848">
-            <IoCall className={styles.icon} size={25} color="#055f05" />
+            <IoCall className={styles.icon} size={25} color="#7e0624" />
           </a>
         </div>
         {isInterestPopupOpen && (

@@ -62,56 +62,51 @@ const BusinessGuide2 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-			{/* 필수 메타 */}
-			<title>이천 롯데캐슬 3차 - 계약서류안내</title>
-			<meta
-				name="description"
-				content="이천 롯데캐슬 3차 임대차 계약 서류 안내. 신분증, 주민등록등본, 인감증명서 등 필수 제출서류와 대리인·공동명의·세대구성별 준비 절차, 유의사항을 빠르고 정확하게 확인하세요."
-			/>
-			<meta name="robots" content="index,follow" />
-			<link
-				rel="canonical"
-				href="http://kf-liria.com/BusinessGuide/documents"
-			/>
+				<Helmet>
+				{/* 필수 메타 */}
+				<title>이천 롯데캐슬 3차 - 계약서류안내</title>
+				<meta
+					name="description"
+					content="이천 롯데캐슬 3차 분양(청약) 계약을 위한 서류 안내. 신분증, 주민등록등본, 인감증명서 등 필수 제출서류와 준비 절차, 유의사항을 빠르게 확인하세요."
+				/>
+				<meta name="robots" content="index,follow" />
+				<link
+					rel="canonical"
+					href="https://lotte-castl.co.kr/BusinessGuide/documents"
+				/>
 
-			{/* Open Graph */}
-			<meta property="og:type" content="website" />
-			<meta property="og:site_name" content="이천 롯데캐슬 3차" />
-			<meta property="og:title" content="이천 롯데캐슬 3차 - 계약서류안내" />
-			<meta
-				property="og:description"
-				content="이천 롯데캐슬 3차 임대차 계약서류 안내: 신분증·주민등록등본·인감증명서 등 필수 서류, 대리인 계약 시 위임장·가족관계증명서, 유의사항까지 한눈에."
-			/>
-			<meta property="og:url" content="http://kf-liria.com/BusinessGuide/documents" />
-			<meta property="og:image" content="http://kf-liria.com/Main1.png" />
-			</Helmet>
-
-			<Header isChanged={isScroll} />
-			<FixIcon />
-			<Bener title="계약서류안내" />
-			<MenuBar contents={menuContents} />
-
-			{/* SEO: 페이지 제목/설명 */}
-			<h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 계약서류안내</h1>
-			<p className={styles.screenReaderOnly}>
-			이천 롯데캐슬 3차 계약서류안내 페이지에서는 임대차 계약에 필요한 서류를 정리해 드립니다.
-			계약 체결 시 신분증, 주민등록등본, 인감증명서, 인감도장 등 필수 제출서류와 함께
-			제출 기한, 대리인 계약 시 위임장·가족관계증명서 등 추가 서류, 공동명의·세대구성별 유의사항을 안내하여
-			혼동 없이 준비하실 수 있도록 돕습니다.
-			</p>
-
-			{/* 히어로 카피 */}
-			<div className={styles.textBox}>
-			<div>임대차 계약을 위한 첫 걸음</div>
-			<div>이천 롯데캐슬 3차, 준비된 서류로 안심 계약하세요.</div>
-			</div>
+				{/* Open Graph */}
+				<meta property="og:type" content="website" />
+				<meta property="og:site_name" content="이천 롯데캐슬 3차" />
+				<meta property="og:title" content="이천 롯데캐슬 3차 - 계약서류안내" />
+				<meta
+					property="og:description"
+					content="이천 롯데캐슬 3차 계약서류 안내: 신분증·주민등록등본·인감증명서 등 필수 서류와 준비 절차, 유의사항을 확인하세요."
+				/>
+				<meta property="og:url" content="https://lotte-castl.co.kr/BusinessGuide/documents" />
+				<meta property="og:image" content="https://lotte-castl.co.kr/Main1.png" />
+				</Helmet>
 
 
+				<Header isChanged={isScroll} />
+				<FixIcon />
+				<Bener title="계약서류안내" />
+				<MenuBar contents={menuContents} />
+				{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+				<h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 계약서류안내</h1>
+				<p className={styles.screenReaderOnly}>
+				본 페이지는 분양(청약) 당첨 후 계약 체결을 위해 필요한 서류를 안내합니다.
+				제출 서류 목록과 준비 방법, 제출 기한 및 유의사항을 확인해 정확하고 빠르게 진행하세요.
+				</p>
+
+				<div className={styles.textBox}>
+				<div>강화의 새로운 기준 위에</div>
+				<div>이천 롯데캐슬 3차, 계약서류를 미리 준비하세요.</div>
+				</div>
 
 
 			{/* 이미지에 isImageVisible 상태 적용 */}
-			{/* <img className={`${styles.image4} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="이천 롯데캐슬 3차 계약서류안내-image1" /> */}
+			{/* <img className={`${styles.image4} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="이천 롯데캐슬 3차계약서류안내-image1" /> */}
 
 
 

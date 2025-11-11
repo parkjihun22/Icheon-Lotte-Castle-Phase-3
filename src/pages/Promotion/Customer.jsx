@@ -32,7 +32,7 @@ export default function Customer() {
 
     try {
       // Formspree 엔드포인트로 POST
-      const res = await fetch("https://formspree.io/f/xblpkgbq", {
+      const res = await fetch("https://formspree.io/f/xzzybrgg", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -58,71 +58,73 @@ export default function Customer() {
   };
 
   const promoMenu = [
-    // { key: "newsletter", title: "언론보도", url: "/Promotion/Press" },
+    { key: "newsletter", title: "언론보도", url: "/Promotion/Press" },
     { key: "interest", title: "방문예약등록", url: "/Promotion/Customer" },
   ];
 
   return (
 
     <>
-      <Helmet>
-        {/* 페이지별 메타: title/description/og/canonical 만 관리 */}
-        <title>이천 롯데캐슬 3차 - 관심고객등록</title>
-        <meta
-          name="description"
-          content="이천 롯데캐슬 3차 관심고객 등록 시 모델하우스 방문 예약 알림, 위치 및 현장 정보, 분양 일정과 혜택을 가장 먼저 받아보실 수 있습니다."
-        />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href="http://kf-liria.com/Promotion/Customer" />
+<Helmet>
+  {/* 페이지별 메타: title/description/og/canonical 만 관리 */}
+  <title>이천 롯데캐슬 3차 - 관심고객등록</title>
+  <meta
+    name="description"
+    content="이천 롯데캐슬 3차 관심고객 등록 시 모델하우스 오픈·방문예약, 청약 일정, 현장 위치 등 최신 정보를 가장 먼저 받아보실 수 있습니다."
+  />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://lotte-castl.co.kr/Promotion/Customer" />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="이천 롯데캐슬 3차" />
-        <meta property="og:title" content="이천 롯데캐슬 3차 - 관심고객등록" />
-        <meta
-          property="og:description"
-          content="관심고객 등록하고 이천 롯데캐슬 3차 모델하우스 오픈, 청약·계약 일정, 위치/현장 소식을 가장 먼저 받아보세요."
-        />
-        <meta property="og:url" content="http://kf-liria.com/Promotion/Customer" />
-        <meta property="og:image" content="http://kf-liria.com/img/og/customer.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="이천 롯데캐슬 3차" />
+  <meta property="og:title" content="이천 롯데캐슬 3차 - 관심고객등록" />
+  <meta
+    property="og:description"
+    content="관심고객 등록으로 모델하우스 방문예약, 청약·분양 일정, 현장 위치 등 주요 안내를 우선 받아보세요."
+  />
+  <meta property="og:url" content="https://lotte-castl.co.kr/Promotion/Customer" />
+  <meta property="og:image" content="https://lotte-castl.co.kr/img/og/customer.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="이천 롯데캐슬 3차 - 관심고객등록" />
-        <meta
-          name="twitter:description"
-          content="관심고객 등록 시 모델하우스 예약 알림, 위치/현장 정보, 분양 일정 등을 가장 먼저 안내드립니다."
-        />
-        <meta name="twitter:image" content="http://kf-liria.com/img/og/customer.jpg" />
-        <meta name="twitter:url" content="http://kf-liria.com/Promotion/Customer" />
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="이천 롯데캐슬 3차 - 관심고객등록" />
+  <meta
+    name="twitter:description"
+    content="모델하우스 방문예약, 청약 일정, 현장 위치 등 최신 소식을 가장 먼저 받아보세요."
+  />
+  <meta name="twitter:image" content="https://lotte-castl.co.kr/img/og/customer.jpg" />
+  <meta name="twitter:url" content="https://lotte-castl.co.kr/Promotion/Customer" />
 
-        {/* JSON-LD (대표 이미지/브레드크럼 포함) */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            name: "이천 롯데캐슬 3차 - 관심고객등록",
-            url: "http://kf-liria.com/Promotion/Customer",
-            description:
-              "이천 롯데캐슬 3차 관심고객 등록 시 모델하우스 방문 예약 알림과 위치/현장 정보, 분양 일정을 사전에 안내받을 수 있습니다.",
-            primaryImageOfPage: {
-              "@type": "ImageObject",
-              contentUrl: "http://kf-liria.com/img/og/customer.jpg",
-              width: 1200,
-              height: 630
-            },
-            breadcrumb: {
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                { "@type": "ListItem", position: 1, name: "홈", item: "http://kf-liria.com/" },
-                { "@type": "ListItem", position: 2, name: "관심고객등록", item: "http://kf-liria.com/Promotion/Customer" }
-              ]
-            }
-          })}
-        </script>
-      </Helmet>
+  {/* JSON-LD (대표 이미지/브레드크럼 포함) */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "이천 롯데캐슬 3차 - 관심고객등록",
+      "url": "https://lotte-castl.co.kr/Promotion/Customer",
+      "description":
+        "이천 롯데캐슬 3차 관심고객 등록 시 모델하우스 방문예약, 청약 일정, 현장 위치 등 주요 정보를 우선 제공해 드립니다.",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "https://lotte-castl.co.kr/img/og/customer.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://lotte-castl.co.kr/" },
+          { "@type": "ListItem", "position": 2, "name": "관심고객등록", "item": "https://lotte-castl.co.kr/Promotion/Customer" }
+        ]
+      }
+    })}
+  </script>
+</Helmet>
+
+
 
       <Header />
       <FixIcon />
@@ -204,6 +206,19 @@ export default function Customer() {
     value={form.phone}
     onChange={handleChange}
     placeholder="010-1234-5678"
+    required
+  />
+
+    {/* 연락처 */}
+    <label className={styles.fieldLabel}>
+    생년월일<span className={styles.required}></span>
+  </label>
+  <input
+    type="tel"
+    name="phone"
+    value={form.phone}
+    onChange={handleChange}
+    placeholder="950527"
     required
   />
 

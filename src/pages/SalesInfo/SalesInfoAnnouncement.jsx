@@ -9,19 +9,18 @@ import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 
-// import page1 from "../../assets/SalesInfo/SalesInfoAnnouncement/supply.jpg";
-// import pdfIcon from "../../assets/icons/pdf-icon.png";  // PDF 아이콘 이미지 임포트
+import page1 from "../../assets/SalesInfo/SalesInfoAnnouncement/page1.jpg";
+import pdfIcon from "../../assets/icons/pdf-icon.png";  // PDF 아이콘 이미지 임포트
 
 import Ready from "../../components/Ready/Ready";
 
 
-
 const ComplexGuide1 = () => {
   const menuContents = [
-    { title: "공급안내", url: "/SalesInfo/guide" },
-    // { title: "정당계약안내문", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "청약방법안내", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "청약안내문", url: "/SalesInfo/guide" },
     { title: "모집공고안내", url: "/SalesInfo/announcement" },
-    // { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
+    { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
   ];
 
   const [isScroll, setIsScroll] = useState(false);
@@ -71,45 +70,50 @@ const ComplexGuide1 = () => {
   return (
     <div className={styles.container}>
 
-  
-      <Header isChanged={isScroll} />
-      <FixIcon />
-      <Bener title="모집공고안내" />
-      <MenuBar contents={menuContents} />
+      
+        <Helmet>
+          <title>이천 롯데캐슬 3차 - 모집공고 안내</title>
+          <meta
+            name="description"
+            content="이천 롯데캐슬 3차 모집공고를 한눈에 확인하세요. 공급 세대수·공급면적·분양가, 청약 일정·자격, 당첨자 발표·정당계약 및 유의사항을 안내합니다."
+          />
+          <link rel="canonical" href="https://lotte-castl.co.kr/SalesInfo/announcement" />
+          <meta name="robots" content="index,follow" />
+        </Helmet>
 
-        {/* SEO: 페이지 제목/설명 (스크린리더용) */}
+
+        <Header isChanged={isScroll} />
+        <FixIcon />
+        <Bener title="모집공고안내" />
+        <MenuBar contents={menuContents} />
+
+        {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
         <h1 className={styles.screenReaderOnly}>
-          이천 롯데캐슬 3차 - 모집공고안내
+          이천 롯데캐슬 3차 - 모집공고 안내
         </h1>
         <p className={styles.screenReaderOnly}>
-          이천 롯데캐슬 3차의 임대공급(입주자) 모집공고는 청약 이전 단계에서 확인해야 할
-          공식 안내문입니다. 본 페이지에서는 공급 세대수와 전용면적, 임대보증금·임대료,
-          신청 자격 요건과 접수 일정, 당첨자 발표 및 계약 절차, 제출 서류와 유의사항을
-          체계적으로 확인하실 수 있습니다. 예비 신청자가 혼동 없이 준비하도록 핵심 정보를 제공합니다.
-          (임대 10년 후 분양전환 예정)
+          본 페이지에서는 이천 롯데캐슬 3차의 모집공고 주요 사항을 안내합니다.
+          공급 규모와 면적, 분양가, 청약 일정과 자격, 당첨자 발표 및 정당계약 일정,
+          유의사항을 확인해 청약을 정확하게 준비하세요.
         </p>
 
-        {/* 히어로 카피 */}
         <div className={styles.textBox}>
-          <div>임대공급 모집공고를 확인하세요</div>
+          <div>입주자 모집공고를 확인하세요</div>
           <div>이천 롯데캐슬 3차</div>
         </div>
 
-
-
-      {/* <img
+      <img
         className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
         src={page1}
         alt="이천 롯데캐슬 3차모집공고안내-image1"
         onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
-         /> */}
+         />
       {/* 입주자 모집공고 PDF로 보기 버튼 */}
-       {/* <button onClick={openPDF} className={styles.pdfButton}>
+       <button onClick={openPDF} className={styles.pdfButton}>
                 <img src={pdfIcon} alt="PDF 아이콘" className={styles.pdfIcon} /> 
                 <span>모집공고 PDF<br/>확인하기</span>
-            </button> */}
+            </button>
 
-            <Ready/>
 
 
       {/* 로딩 중일 때 표시할 스피너 */}

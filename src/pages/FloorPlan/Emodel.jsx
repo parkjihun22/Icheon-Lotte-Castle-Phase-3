@@ -11,16 +11,16 @@ import { Helmet } from "react-helmet-async";
 
 const Emodel = () => {
   const menuContents = [
+    { title: "E-모델하우스", key: "E-모델하우스" },
+    // { title: "3,5단지", key: "3,5단지" },
     // { title: "84A", key: "84A" },
-    // { title: "84D", key: "84D" },
-    // { title: "114A", key: "114A" },
     // { title: "84B", key: "84B" },
   ];
 
   const vrUrls = {
-    // "84A": "https://centum-prugio-xi.com/resources/vtour/tour_84a.html",
-    // "84D": "https://centum-prugio-xi.com/resources/vtour/tour_84d.html",
-    // "114A": "https://centum-prugio-xi.com/resources/vtour/tour_114a.html",
+    "E-모델하우스": "https://xn--2n1bt8gy9j21eunh17c.com/theme/theme06/vr/tour.html",
+    // "3,5단지": "https://www.hillstate.co.kr/upload/2024/11/20241107065049013129/tour.html",
+    // "84A": "https://www.prugio.com/hb/2025/onecluster/vr/84a.html",
     // "84B": "https://www.prugio.com/hb/2025/onecluster/vr/84b.html",
   };
 
@@ -28,8 +28,7 @@ const Emodel = () => {
 
 
 
-
-  const [selectedType, setSelectedType] = useState("84A");
+  const [selectedType, setSelectedType] = useState("E-모델하우스");
   const { pathname } = useLocation();
   const [isScroll, setIsScroll] = useState(false);
 
@@ -47,66 +46,82 @@ const Emodel = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        {/* 핵심 SEO 페이지: E-모델하우스 */}
-        <title>이천 롯데캐슬 3차 - E-모델하우스</title>
-        <meta
-          name="description"
-          content="이천 롯데캐슬 3차 E-모델하우스를 온라인에서 둘러보세요. VR 가상 투어로 전용 84㎡ 중심(타입 A/B/C) 평면과 인테리어, 수납·동선 특화를 실제처럼 확인할 수 있습니다."
-        />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href="http://kf-liria.com/FloorPlan/Emodel" />
+<Helmet>
+  {/* 핵심 SEO 페이지: E-모델하우스 */}
+  <title>이천 롯데캐슬 3차 - E-모델하우스</title>
+  <meta
+    name="description"
+    content="이천 롯데캐슬 3차 E-모델하우스를 온라인에서 편리하게 둘러보세요. VR 가상 투어와 전용 84A·84B·122㎡ 세대별 평면도, 인테리어를 실감 나게 확인하실 수 있습니다."
+  />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://lotte-castl.co.kr/FloorPlan/Emodel" />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="이천 롯데캐슬 3차" />
-        <meta property="og:title" content="이천 롯데캐슬 3차 - E-모델하우스" />
-        <meta
-          property="og:description"
-          content="E-모델하우스: 전용 84㎡ 중심(타입 A/B/C) VR 투어, 평면·인테리어·수납 특화를 실감나게 체험하세요."
-        />
-        <meta property="og:url" content="http://kf-liria.com/FloorPlan/Emodel" />
-        <meta property="og:image" content="http://kf-liria.com/img/og/emodel.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="이천 롯데캐슬 3차" />
+  <meta property="og:title" content="이천 롯데캐슬 3차 - E-모델하우스" />
+  <meta
+    property="og:description"
+    content="VR 투어와 전용 84A·84B·122㎡ 평면도, 인테리어를 통해 실제 같은 공간을 체험해보세요."
+  />
+  <meta property="og:url" content="https://lotte-castl.co.kr/FloorPlan/Emodel" />
+  <meta property="og:image" content="https://lotte-castl.co.kr/img/og/emodel.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="이천 롯데캐슬 3차 - E-모델하우스" />
-        <meta
-          name="twitter:description"
-          content="온라인 VR로 전용 84㎡(타입 A/B/C) 공간을 둘러보고, 평면도와 인테리어·수납 포인트를 실제처럼 경험하세요."
-        />
-        <meta name="twitter:image" content="http://kf-liria.com/img/og/emodel.jpg" />
-        <meta name="twitter:url" content="http://kf-liria.com/FloorPlan/Emodel" />
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="이천 롯데캐슬 3차 - E-모델하우스" />
+  <meta
+    name="twitter:description"
+    content="이천 롯데캐슬 3차 VR 모델하우스를 통해 세대별 평면과 인테리어를 생생하게 체험하세요."
+  />
+  <meta name="twitter:image" content="https://lotte-castl.co.kr/img/og/emodel.jpg" />
+  <meta name="twitter:url" content="https://lotte-castl.co.kr/FloorPlan/Emodel" />
 
-        {/* JSON-LD (구조화 데이터) */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            name: "이천 롯데캐슬 3차 - E-모델하우스",
-            url: "http://kf-liria.com/FloorPlan/Emodel",
-            description:
-              "이천 롯데캐슬 3차 E-모델하우스: VR 가상 투어로 전용 84㎡(타입 A/B/C) 평면·인테리어·수납·동선 특화를 온라인에서 확인하세요.",
-            primaryImageOfPage: {
-              "@type": "ImageObject",
-              contentUrl: "http://kf-liria.com/img/og/emodel.jpg",
-              width: 1200,
-              height: 630
-            },
-            breadcrumb: {
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                { "@type": "ListItem", position: 1, name: "홈", item: "http://kf-liria.com/" },
-                { "@type": "ListItem", position: 2, name: "E-모델하우스", item: "http://kf-liria.com/FloorPlan/Emodel" }
-              ]
-            }
-          })}
-        </script>
-      </Helmet>
+  {/* JSON-LD (구조화데이터) */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "이천 롯데캐슬 3차 - E-모델하우스",
+      "url": "https://lotte-castl.co.kr/FloorPlan/Emodel",
+      "description":
+        "이천 롯데캐슬 3차 E-모델하우스를 온라인에서 편리하게 둘러보세요. VR 가상 투어와 전용 84A·84B·122㎡ 세대별 평면도를 확인할 수 있습니다.",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "https://lotte-castl.co.kr/img/og/emodel.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://lotte-castl.co.kr/" },
+          { "@type": "ListItem", "position": 2, "name": "E-모델하우스", "item": "https://lotte-castl.co.kr/FloorPlan/Emodel" }
+        ]
+      }
+    })}
+  </script>
+</Helmet>
 
+<Header isChanged={isScroll} />
+<FixIcon />
+<Bener title="E-모델하우스" />
+<MenuBar contents={menuContents} />
 
+<h1 className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차 - E-모델하우스
+</h1>
+<p className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차 E-모델하우스를 온라인으로 만나보세요. VR 가상 투어를 통해 세대별 구조와 인테리어를 실제처럼 경험하고,
+  전용 84A·84B·122㎡ 평면도 정보를 간편하게 확인할 수 있습니다.
+</p>
+
+<div className={styles.textBox}>
+  <div>현장을 가지 않아도,</div>
+  <div>이천 롯데캐슬 3차를 눈앞에서 확인하세요.</div>
+</div>
 
 
 
@@ -116,7 +131,7 @@ const Emodel = () => {
       <Bener title="E-모델하우스" />
       <MenuBar contents={menuContents} />
 
-      <h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - E-모델하우스</h1>
+      <h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차- E-모델하우스</h1>
 
       <div className={styles.tabMenu}>
         {menuContents.slice(0, 5).map((tab, idx) => (

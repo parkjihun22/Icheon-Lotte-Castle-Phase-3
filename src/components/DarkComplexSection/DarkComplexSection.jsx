@@ -6,7 +6,7 @@ import bgImg from "../../assets/ComplexGuide/ComplexGuide1/bg-section.jpg";
 // → 탭에 들어갈 이미지 import
 import layoutImg    from "../../assets/ComplexGuide/ComplexGuide1/page1.webp";
 import designImg    from "../../assets/ComplexGuide/ComplexGuide2/page1.webp";
-import communityImg from "../../assets/ComplexGuide/ComplexGuide3/community.jpg";
+import communityImg from "../../assets/ComplexGuide/ComplexGuide3/page1.jpg";
 import bennerImg from "../../assets/ComplexGuide/ComplexGuide1/complex-1024x573.jpg";
 
 
@@ -40,7 +40,7 @@ export default function DarkComplexSection() {
       <div className={styles.banner}>
         <img
           src={bennerImg}           // 단지배치도 이미지 미리보기용
-          alt="이천 롯데캐슬 3차 단지 전경 배너"
+          alt="단지 전경 배너"
           className={styles.bannerImg}
         />
       </div>

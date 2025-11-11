@@ -11,20 +11,15 @@ import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 import { Helmet } from "react-helmet-async";
 
 
-// import page1 from "../../assets/Interior/Interior1/interior1.jpg";
+import page1 from "../../assets/Interior/Interior1/page1.jpg";
 
 import Ready from "../../components/Ready/Ready";
 
 
-
-
-
 const Interior1 = () => {
   const menuContents = [
-		{ title: "84A", url: "/Interior/59A" },
-		{ title: "84C", url: "/Interior/84A" },
-		// { title: "114A", url: "/Interior/84B" },
-
+    { title: "59A", url: "/Interior/59A" },
+    { title: "72B", url: "/Interior/84A" },
   ];
 
   const [isScroll, setIsScroll] = useState(false);
@@ -70,21 +65,17 @@ const Interior1 = () => {
       {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
 
       <div className={styles.textBox}>
-        <div>공원 특례, 7개동 921세대 민간임대</div>
-        <div>이천 롯데캐슬 3차가 새로운 주거 기준을 제시합니다.</div>
+        <div>이천의 새로운 기준 위에</div>
+        <div>이천 롯데캐슬 3차가 자부심으로 찾아옵니다.</div>
       </div>
 
       {/* 이미지에 애니메이션 효과 추가 */}
-      {/* <img
+      <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="이천 롯데캐슬 3차 인테리어 84A 안내 이미지1"
+				alt="이천 롯데캐슬 3차인테리어 안내 이미지1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
-			/> */}
-
-      <Ready/>
-
-
+			/>
 
       <div className={styles.commonBox2}>
         <div className={styles.notice}>

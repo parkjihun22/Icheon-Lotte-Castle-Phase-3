@@ -11,32 +11,7 @@ import InterestPopup from "../InterestPopup/InterestPopup";
 
 // FAMILY SITE 목록 예시
 const partnerSites = [
-  { url: "https://www.beyinegzersizi.com", name: "용인푸르지오 원클러스터2단지" },
-  { url: "https://www.cssdesign.kr", name: "둔산 해링턴 플레이스" },
-  { url: "https://www.abcya4.com", name: "관저 푸르지오 임대" },
-  { url: "https://www.vaaclubs.com", name: "신분평 더웨이시티" },
-  { url: "https://www.verficktescheisse.com", name: "평택 화양 동문디이스트" },
-  { url: "https://www.daincounseling.co.kr", name: "회천중앙역 로제비앙" },
-  { url: "https://niceoi.kr", name: "브레인시티 앤네이처 미래도" },
-  { url: "http://kf-liria.com/", name: "이천 롯데캐슬 3차" },
-  { url: "https://delidilly.co.kr/", name: "평택화양 신영지웰" },
-  { url: "https://locamobility.co.kr/", name: "평촌 롯데캐슬 르씨엘" },
-  { url: "https://eliasart.kr/", name: "평택 브레인시티 푸르지오" },
-  { url: "https://intercs.co.kr/", name: "대전 하늘채 루시에르" },
-  { url: "https://www.leecols.kr/", name: "브레인시티 메디스파크 로제비앙" },
-  { url: "https://layershop.kr/", name: "대전 유천 벽산블루밍" },
-  { url: "https://hangboggift.kr/", name: "송도역 한신더휴" },
-  { url: "https://www.bunyang-114.com/", name: "청주센텀푸르지오자이" },
-  { url: "https://www.diarivalencia.com/", name: "김해 테크노밸리 제일풍경채 2차" },
-  { url: "https://www.theporest.co.kr/", name: "포항 펜타시티 한신더휴" },
-  { url: "https://www.ifors2020.kr/", name: "포항 학산 한신더휴" },
-  { url: "https://www.dwbsongs.com/", name: "힐스테이트 둔산" },
-  { url: "https://www.a7lashare.com/", name: "벤처밸리 푸르지오" },
-  { url: "https://tradexmeds.com/", name: "숭의역 라온프라이빗" },
-  { url: "https://sinbiapt.co.kr/", name: "두산위브 센트럴파크 강화" },
-  { url: "https://www.luris.kr/", name: "더샵 신문그리니티" },
-  { url: "https://www.apay.co.kr/", name: "힐스테이트 도안리버파크 임대" },
-  { url: "https://www.alwatanyh.com/", name: "힐스테이트 도안리버파크" },
+  { name: "이천 롯데캐슬 3차", url: "https://lotte-castl.co.kr/" },
 ];
 
 const Footer = () => {
@@ -73,7 +48,7 @@ const Footer = () => {
         <div className={styles.mobileWrapper}>
           {/* 상단 로고 */}
           <div className={styles.mobileLogo}>
-            <h2>이천 롯데캐슬 3차 </h2>
+            <h2>이천 롯데캐슬 3차</h2>
           </div>
 
           {/* 안내문구 */}
@@ -97,7 +72,7 @@ const Footer = () => {
           {/* 시행사/시공사 */}
           <div className={styles.mobileCompany}>
             <div>
-              <strong>시&nbsp;공&nbsp;사</strong> (주)BS한양(예정)
+              <strong>시&nbsp;공&nbsp;사</strong> (주)롯데건설
             </div>
           </div>
 
@@ -129,7 +104,7 @@ const Footer = () => {
           {/* COPYRIGHT */}
           <div className={styles.mobileCopyright}>
             <p>
-              COPYRIGHTⓒ 2025 이천 롯데캐슬 3차  INC. ALL RIGHTS RESERVED.
+              COPYRIGHTⓒ 2025 이천 롯데캐슬 3차 INC. ALL RIGHTS RESERVED.
             </p>
           </div>
         </div>
@@ -153,7 +128,7 @@ const Footer = () => {
               </div>
               <div className={styles.companyInfo}>
                 <div>
-                  <strong>시&nbsp;공&nbsp;사</strong> (주)BS한양(예정) 
+                  <strong>시&nbsp;공&nbsp;사</strong> (주)롯데건설 
                 </div>
               </div>
               <div className={styles.buttonRow}>
@@ -181,7 +156,7 @@ const Footer = () => {
           </div>
           <div className={styles.desktopCopyright}>
             <p>
-              COPYRIGHTⓒ 2025 이천 롯데캐슬 3차  INC. ALL RIGHTS RESERVED.
+              COPYRIGHTⓒ 2025 이천 롯데캐슬 3차 INC. ALL RIGHTS RESERVED.
             </p>
           </div>
         </>

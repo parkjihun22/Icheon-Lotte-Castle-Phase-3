@@ -8,21 +8,18 @@ import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
-// import page1 from "../../assets/SalesInfo/SubscriptionGuide/legitimate.jpg";
-
+// import page1 from "../../assets/SalesInfo/SubscriptionGuide/page1.jpg";
 
 import Ready from "../../components/Ready/Ready";
 
 
 
-
-
 const ComplexGuide1 = () => {
   const menuContents = [
-    { title: "공급안내", url: "/SalesInfo/guide" },
-    // { title: "정당계약안내문", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "청약방법안내", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "청약안내문", url: "/SalesInfo/guide" },
     { title: "모집공고안내", url: "/SalesInfo/announcement" },
-    // { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
+    { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
   ];
 
   const [isScroll, setIsScroll] = useState(false);
@@ -56,52 +53,56 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
-        <Helmet>
-          <title>이천 롯데캐슬 3차 - 정당계약안내</title>
-          <meta
-            name="description"
-            content="이천 롯데캐슬 3차 청약방법을 확인하세요. 청약 자격, 신청 절차, 준비서류 및 유의사항을 단계별로 상세히 안내합니다."
-          />
-          <link rel="canonical" href="http://kf-liria.com/SalesInfo/SubscriptionGuide" />
-          <meta name="robots" content="index,follow" />
-        </Helmet>
+      <Helmet>
+        <title>이천 롯데캐슬 3차 - 체크포인트</title>
+        <meta
+          name="description"
+          content="이천 롯데캐슬 3차 분양 전 필수 체크포인트를 확인하세요. 청약 자격(거주기간·무주택·예치금), 특별공급 유형, 필요서류·일정, 유의사항을 한눈에 안내합니다."
+        />
+        <link rel="canonical" href="https://lotte-castl.co.kr/SalesInfo/SubscriptionGuide" />
+        <meta name="robots" content="index,follow" />
+      </Helmet>
 
-        <Header isChanged={isScroll} />
-        <FixIcon />
+      <Header isChanged={isScroll} />
+      <FixIcon />
 
-        <Bener title="정당계약안내" />
+      <Bener title="체크포인트" />
 
-        <MenuBar contents={menuContents} />
+      <MenuBar contents={menuContents} />
+      {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+      <h1 className={styles.screenReaderOnly}>
+        이천 롯데캐슬 3차 - 체크포인트
+      </h1>
+      <p className={styles.screenReaderOnly}>
+        이천 롯데캐슬 3차 분양 전 확인해야 할 핵심 체크리스트입니다.
+        청약 자격(거주기간·무주택·예치금), 특별공급 요건, 필요서류와 접수 일정,
+        당첨자 제출서류 및 유의사항을 정리해 혼선 없이 준비할 수 있도록 돕습니다.
+      </p>
 
-        {/* SEO: 페이지 제목/설명 */}
-        <h1 className={styles.screenReaderOnly}>
-          이천 롯데캐슬 3차 - 정당계약안내
-        </h1>
-        <p className={styles.screenReaderOnly}>
-          이천 롯데캐슬 3차 정당계약안내 페이지에서는 청약 당첨자가 반드시 확인해야 할 
-          계약 자격 요건, 진행 절차, 제출 서류, 유의사항 등을 안내합니다.
-          단계별 절차를 정리하여 계약자가 혼동 없이 준비할 수 있도록 돕습니다.
-        </p>
+      <div className={styles.textBox}>
+        <div>강화의 새로운 기준 위에</div>
+        <div>이천 롯데캐슬 3차, 분양 전 체크포인트를 확인하세요.</div>
+      </div>
 
-        <div className={styles.textBox}>
-          <div>청약 절차를 한눈에</div>
-          <div>이천 롯데캐슬 3차와 함께하세요</div>
-        </div>
 
-        {/* 이미지에 애니메이션 효과 추가 */}
-        {/* <img
-          className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
-          src={page1}
-          alt="이천 롯데캐슬 3차 정당계약안내 이미지"
-          onLoad={handleImageLoad}
-        /> */}
+      {/* 이미지에 애니메이션 효과 추가 */}
+      {/* <img
+        className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
+        src={page1}
+        alt="이천 롯데캐슬 3차청약제도 변경안내 이미지1"
+        onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
+      /> */}
 
-        <Ready/>
+
+      <Ready/>
+
+
+
 
       <div className={styles.commonBox2}>
         <div className={styles.notice}>
-          ※ 이천 롯데캐슬 3차 정당계약안내 페이지에서는 청약 자격 조건, 신청 절차,
-          준비해야 할 서류, 주의사항 등을 확인할 수 있습니다.
+          ※ 상기 내용은 편집과정상 오류가 있을 수 있으니 반드시 입주자모집공고를
+          확인하시기 바랍니다.
         </div>
       </div>
 

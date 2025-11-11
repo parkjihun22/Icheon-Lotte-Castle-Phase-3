@@ -9,11 +9,7 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 
 
-// import page1 from "../../assets/BusinessGuide/BusinessGuide2/schedule.jpg";
-
-import Ready from "../../components/Ready/Ready";
-
-
+import page1 from "../../assets/BusinessGuide/BusinessGuide2/page1.jpg";
 
 const BusinessGuide2 = () => {
     const menuContents = [
@@ -54,46 +50,44 @@ const BusinessGuide2 = () => {
 
     return (
         <div className={styles.container}>
-            <Helmet>
-            <title>이천 롯데캐슬 3차 - 분양일정</title>
-            <meta
-                name="description"
-                content="이천 롯데캐슬 3차 분양일정을 한눈에 확인하세요. 모델하우스 오픈, 특별공급·1순위 청약, 당첨자 발표, 계약일정 및 입주예정일까지 상세히 안내합니다."
-            />
-            <link rel="canonical" href="http://kf-liria.com/BusinessGuide/plan" />
-            <meta name="robots" content="index,follow" />
-            </Helmet>
+<Helmet>
+  <title>이천 롯데캐슬 3차 - 분양일정</title>
+  <meta
+    name="description"
+    content="이천 롯데캐슬 3차 분양(청약) 일정을 한눈에 확인하세요. 특별공급·1·2순위 접수, 모델하우스 오픈, 당첨자 발표 및 정당계약 등 핵심 일정을 안내합니다."
+  />
+  <link rel="canonical" href="https://lotte-castl.co.kr/BusinessGuide/plan" />
+  <meta name="robots" content="index,follow" />
+</Helmet>
 
-            <Header isChanged={isScroll} />
-            <FixIcon />
+<Header isChanged={isScroll} />
+<FixIcon />
 
-            <Bener title="분양일정" />
-            <MenuBar contents={menuContents} />
+<Bener title="분양일정" />
+<MenuBar contents={menuContents} />
 
-                {/* SEO: 페이지 제목/설명 */}
-                <h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 분양일정</h1>
-                <p className={styles.screenReaderOnly}>
-                이천 롯데캐슬 3차의 임대·청약 일정은 모델하우스(견본주택) 개관, 임대공급 공고,
-                특별공급 및 1순위 청약, 당첨자 발표, 계약 일정, 입주 예정, 그리고 10년 후 분양전환(예정) 안내까지
-                수요자가 꼭 알아야 할 핵심 정보를 제공합니다.
-                </p>
+{/* SEO 최적화를 위한 h1/p 태그 */}
+<h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 분양일정</h1>
+<p className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차의 분양(청약) 일정을 한곳에서 확인하세요.
+  특별공급·1·2순위 청약 접수부터 당첨자 발표, 정당계약까지 단계별 일정을 안내합니다.
+</p>
 
-                {/* 히어로 카피 */}
-                <div className={styles.textBox}>
-                <div>7개동 921세대의 새로운 시작</div>
-                <div>이천 롯데캐슬 3차, 임대·청약 일정을 확인하세요</div>
-                </div>
+<div className={styles.textBox}>
+  <div>이천 도심의 새로운 주거 기준</div>
+  <div>이천 롯데캐슬 3차, 분양일정을 확인하세요.</div>
+</div>
 
+{/* 분양일정 이미지 또는 컴포넌트 영역 */}
+<img
+  className={`${styles.image4} ${isImageVisible ? styles.visible : ''}`}
+  src={page1}
+  alt="이천 롯데캐슬 3차 분양일정 안내"
+/>
 
-
-
-            {/* ✅ 기존 이미지 부분 주석 처리하고 Ready 컴포넌트 표시 */}
-            {/* <img className={`${styles.image4} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="이천 롯데캐슬 3차 분양일정안내-image1" /> */}
-            <Ready/>
-
-            <div className={styles.readyContainer}>
-           
-            </div>
+<div className={styles.readyContainer}>
+  {/* 필요한 경우 Ready 또는 분양 카운트 컴포넌트 삽입 */}
+</div>
 
 
             <Footer />

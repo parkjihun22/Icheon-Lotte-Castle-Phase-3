@@ -51,41 +51,40 @@ const section3Contents = [
   {
     imgSrc: section3_Image1,
     title: "PREMIUM 01",
-    text1: `공원 특례·7개동 921세대`,
-    text2: `전용 84중심(타입 A/B/C)<br/>
-            지하2~지상29층, 공원 일체형 단지`,
+    text1: `브랜드 대단지 스케일`,
+    text2: `총 1,325세대 롯데캐슬 브랜드 대단지<br/>
+            지하 2층~지상 25층 · 21개동 · 공원형 단지`,
     link: "/BusinessGuide/intro",
     linkText: "더 알아보기 >",
   },
   {
     imgSrc: section3_Image2,
     title: "PREMIUM 02",
-    text1: `도심·광역 교통 프리미엄`,
-    text2: `2·3순환로·청주강서IC 가까움<br/>
-            BRT·고속/시외터미널·KTX 오송 연계`,
+    text1: `광역 교통망 모멘텀`,
+    text2: `중부고속도로·송정IC 인접<br/>
+            제2경부선 등 광역도로망 확장 기대`,
     link: "/LocationEnvironment/intro",
     linkText: "더 알아보기 >",
   },
   {
     imgSrc: section3_Image3,
     title: "PREMIUM 03",
-    text1: `행정·의료·생활 원스톱`,
-    text2: `홈플러스·터미널 상권 이용권<br/>
-            행정·의료·교육 인프라 인접`,
+    text1: `의료·생활 인프라 집약`,
+    text2: `이천터미널·롯데마트·이천병원 인접<br/>
+            도심권 상권·행정기관 밀집`,
     link: "/LocationEnvironment/intro",
     linkText: "더 알아보기 >",
   },
   {
     imgSrc: section3_Image4,
     title: "PREMIUM 04",
-    text1: `자연·휴식 특화 환경`,
-    text2: `홍골근린공원 맞닿은 조경 계획<br/>
-            지상 보행 중심 동선·힐링 라이프`,
+    text1: `자연·레저 특화 환경`,
+    text2: `설봉공원·이천온천·산책로 등 자연 인프라<br/>
+            여유로운 주말 힐링 라이프`,
     link: "/LocationEnvironment/primium",
     linkText: "더 알아보기 >",
   },
 ];
-
 
 
 
@@ -246,27 +245,24 @@ const Main = () => {
             />
           )} */}
 
-            <div className={styles.imageContainer}>
-              <img
-                src={mainImage}
-                className={styles.mainImage}
-                alt="이천 롯데캐슬 3차-mainimage1"
-              />
-              <div className={styles.overlay}></div>
-              <div className={styles.mainImageTextBox}>
-                <div className={styles.mainImageTextSub}>
-                  가경에 들어와 <span className={styles.highlightText}>신뢰와 품질이 빛나는</span>{" "}
-                  <span className={styles.greyText}>브랜드 프리미엄</span>
-                </div>
-                <div className={styles.mainImageTitleBox}>
-                  <div className={styles.mainImageText}>공원과 도심이 만나는 프리미엄의 시작</div>
-                  <div className={styles.mainImageLine}></div>
-                  <div className={styles.mainImageText}>
-                    이천 롯데캐슬 3차
-                  </div>
-
-
-
+          <div className={styles.imageContainer}>
+            <img
+              src={mainImage}
+              className={styles.mainImage}
+              alt="이천 롯데캐슬 3차-mainimage1"
+            />
+            <div className={styles.overlay}></div>
+            <div className={styles.mainImageTextBox}>
+            <div className={styles.mainImageTextSub}>
+  브랜드 신뢰 두산위브{" "}
+  <span className={styles.greyText}>브랜드 프리미엄</span>
+</div>
+<div className={styles.mainImageTitleBox}>
+  <div className={styles.mainImageText}>이천이 기다린 미래 프리미엄</div>
+  <div className={styles.mainImageLine}></div>
+  <div className={styles.mainImageText}>
+    이천 롯데캐슬 3차
+  </div>
 
 
                 <button
@@ -277,7 +273,7 @@ const Main = () => {
                   <img
                     src={subpinkimg}
                     className={styles.subPinkImg}
-                    alt="이천 롯데캐슬 3차 관심고객등록"
+                    alt="이천 롯데캐슬 3차관심고객등록"
                     loading="lazy"
                     decoding="async"
                   />
@@ -292,16 +288,14 @@ const Main = () => {
               <div className={styles.textBox}>
                 <div className={styles.text1}>Location</div>
                 <div className={styles.text2}>
-                    이천 롯데캐슬 3차 POINT
-                  </div>
-                  <div className={styles.text3}>
-                    - 2·3순환로·청주강서IC·BRT·고속/시외터미널·KTX 오송 연계로 편리한 광역 이동성<br />
-                    - 홍골근린공원 특례 기반의 공원 일체형 입지, 도보권 생활 인프라와 맞닿은 편의성<br />
-                    - 서현초·서현2초(신설) 등 통학 편리, 학원가 접근 용이한 우수한 교육환경(주변)<br />
-                    - 공원 조망 특화·지상 보행 중심 동선으로 쾌적한 주거환경<br />
-                    - 한양수자인 브랜드 커뮤니티, 총 7개동 921세대 민간임대(분양전환 예정) 프리미엄
-                  </div>
-
+                  이천 롯데캐슬 3차 POINT
+                </div>
+                <div className={styles.text3}>
+                  - 이천 IC·중부고속도로·제2영동고속도로 등 광역 교통망 인접<br />
+                  - 롯데프리미엄아울렛·이마트·병원·공공기관 등 도심 생활 인프라 밀집<br />
+                  - 설봉산·설봉호수·온천 등 자연·여가 인프라로 쾌적한 주거환경<br />
+                  - 지상 차 없는 공원형 단지와 커뮤니티 특화(피트니스·실내골프·작은도서관 등)
+                </div>
 
                 <div className={styles.text4}>
                   <a
@@ -320,7 +314,7 @@ const Main = () => {
               <div className={styles.menuBox}>
                 <img
                   src={section1_Image1}
-                  alt="이천 롯데캐슬 3차 브랜드소개-image2"
+                  alt="이천 롯데캐슬 3차브랜드소개-image2"
                   loading="lazy"
                   decoding="async"
                 />
@@ -353,7 +347,7 @@ const Main = () => {
               </div>
               <img
                 src={section8Img3}
-                alt="이천 롯데캐슬 3차 입지환경소개-image2"
+                alt="이천 롯데캐슬 3차입지환경소개-image2"
                 loading="lazy"
                 decoding="async"
               />
@@ -389,7 +383,7 @@ const Main = () => {
               </div>
               <img
                 src={section2_Image1}
-                alt="이천 롯데캐슬 3차 아파트 조감도-image3"
+                alt="이천 롯데캐슬 3차아파트 조감도-image3"
                 loading="lazy"
                 decoding="async"
               />
@@ -423,7 +417,7 @@ const Main = () => {
               <div className={styles.imageBox}>
                 <img
                   src={section4_Image1}
-                  alt="이천 롯데캐슬 3차 브랜드소개-image4"
+                  alt="이천 롯데캐슬 3차브랜드소개-image4"
                   loading="lazy"
                   decoding="async"
                 />
@@ -462,7 +456,7 @@ const Main = () => {
             {/* 입력 폼 */}
             <form
               className={styles.pcVisitForm}
-              action="https://formspree.io/f/xblpkgbq"
+              action="https://formspree.io/f/xzzybrgg"
               method="POST"
             >
               <label htmlFor="name">
@@ -532,7 +526,7 @@ const Main = () => {
                   </div>
                 </div>
               </div>
-              <img src={map1} alt="이천 롯데캐슬 3차 오시는길안내-image1" />
+              <img src={map1} alt="이천 롯데캐슬 3차오시는길안내-image1" />
             </div>
           </div> */}
 
@@ -582,43 +576,42 @@ const Main = () => {
 
           <Header isChanged={isScroll} />
 
-                    <div className={styles.imageContainer}>
+          <div className={styles.imageContainer}>
             <img
               src={mobileImageMain}
               className={styles.mainImage}
-              alt="이천 롯데캐슬 3차 mobilemain-image1"
+              alt="이천 롯데캐슬 3차mobilemain-image1"
             />
             <div className={styles.overlay}></div>
             <div className={styles.mainImageTextBox1}>
-              <div className={styles.mainImageTextSub1}>
-                공원과 도심이 이어지는<br/> 새로운 주거 기준, 미래가치<br/>
-                이천 롯데캐슬 3차가<br/> 제시하는 프리미엄 라이프<br />
-                <span className={styles.greyText1}>브랜드 프리미엄</span>
-                <br />
+            <div className={styles.mainImageTextSub1}>
+              이천 도심권의 새로운 시작, 높은 미래가치<br/>
+              브랜드 신뢰 두산위브
+              <br />
+              <span className={styles.greyText1}>브랜드 프리미엄</span>
+              <br />
+            </div>
+            <div className={styles.mainImageTitleBox1}>
+              <div className={styles.mainImageText1}>
+                이천 롯데캐슬 3차
               </div>
-              <div className={styles.mainImageTitleBox1}>
-                <div className={styles.mainImageText1}>
-                  이천 롯데캐슬 3차
-                </div>
+
+
               </div>
             </div>
           </div>
 
-
           <div className={styles.container1}>
             <div className={styles.text1}>Location</div>
             <div className={styles.text2}>
-            이천 롯데캐슬 3차 POINT
-          </div>
-          <div className={styles.text3}>
-            - 2·3순환로·청주강서IC·BRT·KTX 오송 연계로 편리한 광역 이동성<br />
-            - 홍골근린공원 특례공원 일체형 입지, 도보권 생활 인프라와 맞닿은 편의성<br />
-            - 서현초·서현2초(신설) 학원가 접근 용이한 우수한 교육환경(주변)<br />
-            - 공원 조망 특화·지상 보행 중심 동선으로 쾌적한 주거환경<br />
-            - 브랜드 커뮤니티, 총 7개동 921세대 민간임대(분양전환 예정) 프리미엄
-          </div>
-
-
+              이천 롯데캐슬 3차 POINT
+            </div>
+            <div className={styles.text3}>
+              - 이천 IC·중부고속도로·제2영동고속도로 등 광역 교통망 인접<br />
+              - 롯데프리미엄아울렛·이마트·병원·공공기관 등 도심 생활 인프라 밀집<br />
+              - 설봉산·설봉호수·온천 등 자연·여가 인프라로 쾌적한 주거환경<br />
+              - 지상 차 없는 공원형 단지와 커뮤니티 특화(피트니스·실내골프·작은도서관 등)
+            </div>
 
             <div className={styles.text4}>
               {/* 외부 링크대신 방문예약 클릭 시 팝업 호출 */}
@@ -668,7 +661,7 @@ const Main = () => {
             </div>
             <img
               src={section8Img3}
-              alt="이천 롯데캐슬 3차 모바일 입지안내 이미지"
+              alt="이천 롯데캐슬 3차모바일 입지안내 이미지"
               loading="lazy"
               decoding="async"
             />
@@ -694,7 +687,7 @@ const Main = () => {
             </div>
             <img
               src={section2_Image1}
-              alt="이천 롯데캐슬 3차 모바일 조감도 이미지"
+              alt="이천 롯데캐슬 3차모바일 조감도 이미지"
               loading="lazy"
               decoding="async"
             />
@@ -728,16 +721,14 @@ const Main = () => {
             <div>
               <img
                 src={section1_Image1}
-                alt="이천 롯데캐슬 3차 브랜드소개 mobile-image5"
+                alt="이천 롯데캐슬 3차브랜드소개 mobile-image5"
               />
               <Link to="/Brand/intro" className={styles.btn}>
                 브랜드 소개 {">"}
               </Link>
             </div>
           </div> */}
-
-          
-          {/* <MobileNewsSection newsList={newsLists} /> */}
+          <MobileNewsSection newsList={newsLists} />
 
             {/* 모바일 방문예약 섹션 */}
             <div className={styles.mobileVisitContainer}>
@@ -750,7 +741,7 @@ const Main = () => {
 
               <form
                 className={styles.mobileVisitForm}
-                action="https://formspree.io/f/xblpkgbq"
+                action="https://formspree.io/f/xzzybrgg"
                 method="POST"
               >
                 <label htmlFor="name">
@@ -808,7 +799,7 @@ const Main = () => {
             <div className={styles.section9}>
               <img
                 src={mobilemap1}
-                alt="이천 롯데캐슬 3차 오시는길안내-mobileimage2"
+                alt="이천 롯데캐슬 3차오시는길안내-mobileimage2"
               />
             </div>
           </div> */}

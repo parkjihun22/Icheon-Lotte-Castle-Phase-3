@@ -10,15 +10,17 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 import { Helmet } from "react-helmet-async";
 
-//import page1 from "../../assets/FloorPlan/FloorPlan6/page1.jpg"
-import Ready from "../../components/Ready/Ready";
+import page1 from "../../assets/FloorPlan/FloorPlan6/unit_84d.jpg"
+
 
 const FloorPlan6 = () => {
 	const menuContents = [
 		{ title: "84A", url: "/FloorPlan/59A" },
 		{ title: "84B", url: "/FloorPlan/59B" },
 		{ title: "84C", url: "/FloorPlan/84A" },
-		{ title: "84D", url: "/FloorPlan/84B" },
+		{ title: "122", url: "/FloorPlan/84B" },
+		// { title: "84A", url: "/FloorPlan/114A" },
+    // { title: "84D", url: "/FloorPlan/114B" },
 		// { title: "세대안내영상", url: "/FloorPlan/videos" }, // 세대안내영상 링크
 		{ title: "E-모델하우스", url: "/FloorPlan/Emodel" },
 	];
@@ -58,24 +60,22 @@ const FloorPlan6 = () => {
 			<Header isChanged={isScroll} />
 			<FixIcon />
 
-			<Bener title="이천 롯데캐슬 3차 119B 평면image" />
+			<Bener title="세대안내" />
 
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-        <div>공원 특례, 7개동 921세대 민간임대</div>
-        <div>이천 롯데캐슬 3차가 새로운 주거 기준을 제시합니다.</div>
-      </div>
+				<div>강화의 새로운 기준 위에</div>
+				<div>이천 롯데캐슬 3차가 자부심으로 찾아옵니다.</div>
+			</div>
 
 			{/* 이미지에 애니메이션 효과 추가 */}
-			{/*<img
+			<img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="이천 롯데캐슬 3차 이미지3"
+				alt="청약 안내"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
-			/>*/}
-
-			<Ready />
+			/>
 
 			<div className={styles.commonBox2}>
 				<div className={styles.notice}>

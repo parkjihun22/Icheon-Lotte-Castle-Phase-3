@@ -45,47 +45,43 @@ const LocationEnvironment1 = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        <title>이천 롯데캐슬 3차 - 프리미엄</title>
-        <meta
-          name="description"
-          content="이천 롯데캐슬 3차 프리미엄: 홍골근린공원 특례 기반의 공원 일체형 단지, 7개동 921세대(전용 84㎡ 중심) 10년 민간임대 후 분양전환(예정). 한양수자인 커뮤니티와 조경, 2·3순환로·청주강서IC·BRT·KTX 오송 접근성을 확인하세요."
-        />
-        <link rel="canonical" href="http://kf-liria.com/LocationEnvironment/primium" />
-        <meta name="robots" content="index,follow" />
-      </Helmet>
+<Helmet>
+  <title>이천 롯데캐슬 3차 - 프리미엄</title>
+  <meta
+    name="description"
+    content="이천 롯데캐슬 3차 프리미엄을 확인하세요. 1,325세대 브랜드 대단지, 지상 차 없는 공원형 단지, 중부고속도로 및 송정IC 접근성, 특화 커뮤니티와 설봉공원·이천온천 등 자연환경의 핵심 가치를 안내합니다."
+  />
+  <link rel="canonical" href="https://lotte-castl.co.kr/LocationEnvironment/primium" />
+  <meta name="robots" content="index,follow" />
+</Helmet>
 
-      <Header isChanged={isScroll} />
-      <FixIcon />
+<Header isChanged={isScroll} />
+<FixIcon />
 
-      <Bener title="프리미엄" />
+<Bener title="프리미엄" />
+<MenuBar contents={menuContents} />
 
-      <MenuBar contents={menuContents} />
+<h1 className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차 - 프리미엄
+</h1>
+<p className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차만의 프리미엄을 만나보세요. 브랜드 대단지, 공원형 단지 설계와 
+  특화된 커뮤니티, 중부고속도로 및 송정IC와의 우수한 접근성, 설봉공원·온천 등 자연 인프라가 조화를 이루는 프리미엄 생활을 제안합니다.
+</p>
 
-      {/* SEO: 페이지 제목/설명 */}
-      <h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 프리미엄</h1>
-      <p className={styles.screenReaderOnly}>
-        이천 롯데캐슬 3차만의 프리미엄을 만나보세요.
-        홍골근린공원 특례 기반의 공원 일체형 설계, 남향 위주 배치와 공원 조망 특화,
-        전용 84㎡ 중심 7개동 921세대의 10년 민간임대 후 분양전환(예정),
-        한양수자인 커뮤니티와 보행 중심 단지 동선, 2·3순환로·청주강서IC·BRT·KTX 오송 연계로
-        완성되는 생활·교통 프리미엄을 제공합니다.
-      </p>
+<div className={styles.textBox}>
+  <div>이천의 새로운 기준 위에</div>
+  <div>이천 롯데캐슬 3차의 프리미엄을 누리세요.</div>
+</div>
 
-      {/* 히어로 카피 */}
-      <div className={styles.textBox}>
-        <div>공원을 품은 일상의 프리미엄</div>
-        <div>이천 롯데캐슬 3차, 한양수자인이 높이는 주거 기준</div>
-      </div>
+
 
       <img
         src={page1}
         className={styles.image3}
-        alt="이천 롯데캐슬 3차  프리미엄안내 이미지"
+        alt="이천 롯데캐슬 3차 프리미엄 이미지1"
       />
 
-
-      
       <Footer />
     </div>
   );

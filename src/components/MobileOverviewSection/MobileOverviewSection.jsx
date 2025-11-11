@@ -23,24 +23,24 @@ const items = [
     content: (
       <ul className={styles.detailList}>
         <li>
-          <strong>사업명</strong>
-          <span>이천 롯데캐슬 3차</span>
-        </li>
-        <li>
-          <strong>대지위치</strong>
-          <span>충청북도 청주시 흥덕구 가경동 일원</span>
-        </li>
-        <li>
-          <strong>건축규모</strong>
-          <span>지하 2층 ~ 지상 29층, 7개 동(예정)</span>
-        </li>
-        <li>
-          <strong>주택형</strong>
-          <span>전용 84㎡ 단일(타입 다양화 예정)</span>
-        </li>
-        <li>
-          <strong>세대수</strong>
-          <span>총 921세대, 10년 민간임대 후 분양전환(예정)</span>
+        <strong>사업명</strong>
+        <span>이천 롯데캐슬 3차</span>
+      </li>
+      <li>
+        <strong>대지위치</strong>
+        <span>경기도 이천시 관고동 487번지 외 5필지</span>
+      </li>
+      <li>
+        <strong>건축규모</strong>
+        <span>지하 6층 ~ 지상 49층, 총 4개동</span>
+      </li>
+      <li>
+        <strong>주택형</strong>
+        <span>전용 84㎡ · 122㎡(중대형 중심)</span>
+      </li>
+      <li>
+        <strong>세대수</strong>
+        <span>총 608세대 (공공지원 민간임대 포함)</span>
         </li>
       </ul>
     ),
@@ -54,12 +54,12 @@ const items = [
         <img
           src={mobileMap}
           className={styles.mapImage}
-          alt="이천 롯데캐슬 3차 입지환경 지도 1"
+          alt="입지환경 지도 1"
         />
         <img
           src={mobileMap2}
           className={styles.mapImage}
-          alt="이천 롯데캐슬 3차 입지환경 지도 2"
+          alt="입지환경 지도 2"
         />
       </div>
     ),
@@ -73,8 +73,8 @@ const items = [
         <div className={styles.premiumIntro}>
           <h3 className={styles.premiumTitle}>GREAT PREMIUM</h3>
           <p className={styles.premiumSubtitle}>
-            사직1구역 최중심 입지와 행정·의료·생활 인프라를 누리는<br />
-            이천 롯데캐슬 3차 프리미엄 라이프
+            도안신도시 생활중심과 학세권을 누리는<br />
+            이천 롯데캐슬 3차프리미엄 라이프
           </p>
         </div>
         {/* 슬라이더 */}
@@ -84,49 +84,47 @@ const items = [
   },
 ];
 
-
 function PremiumSlider() {
   const slides = [
     {
       img: slide1,
-      title: "공원 특례·민간임대 프리미엄",
+      title: "이천 도심권 개발·생활 인프라 호재",
       desc:
-        "홍골공원 특례사업·공원일체형 단지<br/>총 7개동 921세대(전용 84㎡ 중심) 민간임대<br/>10년 안정거주 후 분양전환(예정)",
+        "이천시청 생활권, 공공·상업·주거 복합 개발 기대<br/>경강선, 제2중부고속도로 등 광역 교통망 수혜<br/>이천터미널·롯데프리미엄아울렛 등 중심 입지",
     },
     {
       img: slide2,
-      title: "행정·의료·생활 인프라 원스톱",
+      title: "의료·건강 인프라 접근성",
       desc:
-        "홈플러스·터미널 상권 인접<br/>행정·의료·쇼핑·문화 인프라 풍부<br/>도보권 공원·산책로로 힐링 라이프",
+        "이천병원·보건소 등 의료기관 인접<br/>검진·응급 등 생활형 의료 편의성 우수<br/>고령층·가족 단위 건강생활권 확보",
     },
     {
       img: slide3,
-      title: "도심·광역 교통 접근성",
+      title: "광역 교통망 확장 기대",
       desc:
-        "2·3순환로·청주강서IC 가까움<br/>BRT·고속/시외버스터미널 이용 편리<br/>KTX 오송·청주공항 접근성 우수",
+        "경강선·중부고속도로·제2중부고속도로 인접<br/>서울·성남·판교·수원 등 수도권 접근성 강화<br/>이천IC·마장IC·호법JC 인프라 수혜",
     },
     {
       img: slide4,
-      title: "교육·학세권 프리미엄",
+      title: "교육·생활 인프라 집약",
       desc:
-        "서현초·서현2초(신설) 등 통학권<br/>중·고교·학원가 인접(주변)<br/>안심 통학 동선 계획",
+        "관고초·이천중·이천고 등 통학 인접<br/>이마트·CGV·시청·행정기관 등 중심 생활권<br/>이천터미널 도보 이용 가능",
     },
     {
       img: slide5,
-      title: "한양수자인 커뮤니티",
+      title: "이천 중심 608세대 대단지",
       desc:
-        "피트니스·실내골프·작은도서관<br/>어린이집·스터디룸·라운지(예정)<br/>입주민 맞춤형 생활편의",
+        "지하 6층 ~ 지상 49층, 총 4개동 규모<br/>전용 84·102·113㎡ 중대형 평형 구성",
     },
     {
       img: slide6,
-      title: "조경·설계 가치",
+      title: "롯데캐슬 브랜드 프리미엄",
       desc:
-        "지상차 최소·보행 중심 공원형 단지<br/>남향 위주·공원 조망 특화 설계<br/>대규모 녹지로 쾌적한 일상",
+        "롯데건설 시공, 브랜드 커뮤니티 설계<br/>스카이라인 조망 특화·공원형 동선 계획<br/>2028년 입주 예정",
     },
   ];
 
-
-  // ... 기존 컴포넌트 렌더링 로직 유지
+  
 
   const [current, setCurrent] = useState(0);
   const [touchStartX, setTouchStartX] = useState(null);

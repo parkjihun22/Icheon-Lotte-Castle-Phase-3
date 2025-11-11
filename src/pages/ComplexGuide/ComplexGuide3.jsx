@@ -9,8 +9,7 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 
 
-import page1 from "../../assets/ComplexGuide/ComplexGuide3/community.jpg";
-
+import page1 from "../../assets/ComplexGuide/ComplexGuide3/page1.jpg";
 
 
 
@@ -51,47 +50,45 @@ const ComplexGuide3 = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        <title>이천 롯데캐슬 3차 - 커뮤니티</title>
-        <meta
-          name="description"
-          content="이천 롯데캐슬 3차 커뮤니티를 소개합니다. 피트니스센터·실내골프연습장·GX룸·독서실·스터디룸·어린이집·게스트하우스(예정) 등 한양수자인의 세심한 커뮤니티로 생활 품격을 높이세요."
-        />
-        <link rel="canonical" href="http://kf-liria.com/ComplexGuide/community" />
-        <meta name="robots" content="index,follow" />
+<Helmet>
+  <title>이천 롯데캐슬 3차 - 커뮤니티</title>
+  <meta
+    name="description"
+    content="이천 롯데캐슬 3차의 커뮤니티 시설을 소개합니다. 피트니스센터, 실내 골프연습장, 작은도서관(북카페), 주민 라운지 등 입주민의 생활 품격을 높이는 다양한 편의시설을 만나보세요."
+  />
+  <link rel="canonical" href="https://lotte-castl.co.kr/ComplexGuide/community" />
+  <meta name="robots" content="index,follow" />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="이천 롯데캐슬 3차" />
-        <meta property="og:title" content="이천 롯데캐슬 3차 - 커뮤니티" />
-        <meta
-          property="og:description"
-          content="피트니스·실내골프·GX룸·독서실·스터디룸·어린이집·라운지·게스트하우스(예정) 등 공원과 맞닿은 커뮤니티를 한눈에."
-        />
-        <meta property="og:url" content="http://kf-liria.com/ComplexGuide/community" />
-        <meta property="og:image" content="http://kf-liria.com/img/og/complex.jpg" />
-      </Helmet>
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="이천 롯데캐슬 3차" />
+  <meta property="og:title" content="이천 롯데캐슬 3차 - 커뮤니티" />
+  <meta
+    property="og:description"
+    content="피트니스·실내골프·작은도서관·라운지 등 다양한 커뮤니티로 일상의 가치를 높이는 이천 롯데캐슬 3차."
+  />
+  <meta property="og:url" content="https://lotte-castl.co.kr/ComplexGuide/community" />
+  <meta property="og:image" content="https://lotte-castl.co.kr/img/og/complex.jpg" />
+</Helmet>
 
-      <Header isChanged={isScroll} />
-      <FixIcon />
-      <Bener title="커뮤니티" />
-      <MenuBar contents={menuContents} />
+<Header isChanged={isScroll} />
+<FixIcon />
+<Bener title="커뮤니티" />
+<MenuBar contents={menuContents} />
 
-      {/* SEO: 페이지 제목/설명 */}
-      <h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 커뮤니티</h1>
-      <p className={styles.screenReaderOnly}>
-        이천 롯데캐슬 3차 커뮤니티 페이지에서는 공원 일체형 동선과 함께 단지 내 다양한 편의시설을 소개합니다.
-        피트니스센터, 실내골프연습장, GX룸, 독서실·스터디룸, 어린이집, 라운지, 게스트하우스(예정) 등
-        입주민이 편리하게 이용할 수 있는 시설을 통해 일상에 여가와 배움을 더하고,
-        이웃과 교류하는 건강한 공동체 문화를 만들어갑니다.
-      </p>
+<h1 className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차 - 커뮤니티
+</h1>
+<p className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차의 커뮤니티 페이지에서는 단지 내 다양한 시설을 소개합니다.
+  피트니스센터, 실내 골프연습장, 작은도서관(북카페), 주민 라운지 등 편의시설을 통해
+  입주민의 삶의 질을 높이고 더 나은 공동체 생활을 돕습니다.
+</p>
 
-      {/* 히어로 카피 */}
-      <div className={styles.textBox}>
-        <div>라이프스타일을 채우는 공간</div>
-        <div>이천 롯데캐슬 3차, 공원과 이어진 한양수자인 커뮤니티</div>
-      </div>
-
+<div className={styles.textBox}>
+  <div>이천의 새로운 기준 위에</div>
+  <div>이천 롯데캐슬 3차의 커뮤니티를 만나보세요.</div>
+</div>
 
 
 
@@ -99,10 +96,18 @@ const ComplexGuide3 = () => {
       <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="이천 롯데캐슬 3차 커뮤니티 안내 -image1"
+				alt="이천 롯데캐슬 3차커뮤니티 안내 -image1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/>
 
+      <div className={styles.commonBox}>
+              <div className={styles.notice}>
+                ※ 커뮤니티 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 날 수 있습니다
+              </div>
+              <div className={styles.notice}>
+                ※ 커뮤니티내 조경 및 세부계획, 시설물의 위치는 실제 시공시 현장 상황에 따라 변경될 수 있습니다
+              </div>
+            </div>
 
       <Footer />
     </div>

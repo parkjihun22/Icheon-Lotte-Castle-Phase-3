@@ -7,20 +7,17 @@ import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
-// import page1 from "../../assets/SalesInfo/guide/supply.jpg"
+// import page1 from "../../assets/SalesInfo/guide/page1.jpg"
 
 import Ready from "../../components/Ready/Ready";
 
 
-
-
-
 const ComplexGuide1 = () => {
   const menuContents = [
-    { title: "공급안내", url: "/SalesInfo/guide" },
-    // { title: "정당계약안내문", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "청약방법안내", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "청약안내문", url: "/SalesInfo/guide" },
     { title: "모집공고안내", url: "/SalesInfo/announcement" },
-    // { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
+    { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
   ];
 
   const [isScroll, setIsScroll] = useState(false);
@@ -54,46 +51,57 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
+        <Helmet>
+          <title>이천 롯데캐슬 3차 - 청약안내</title>
+          <meta
+            name="description"
+            content="이천 롯데캐슬 3차 청약안내를 한눈에 확인하세요. 특별공급·1·2순위 청약 일정, 자격요건, 필요서류와 인터넷 청약 절차를 안내합니다."
+          />
+          <link rel="canonical" href="https://lotte-castl.co.kr/SalesInfo/SubscriptionGuide" />
+          <meta name="robots" content="index,follow" />
+        </Helmet>
 
-      <Header isChanged={isScroll} />
-      <FixIcon />
 
-      <Bener title="청약안내" />
-      <MenuBar contents={menuContents} />
+        <Header isChanged={isScroll} />
+        <FixIcon />
 
-      {/* SEO: 페이지 제목/설명 */}
-      <h1 className={styles.screenReaderOnly}>
+        <Bener title="청약안내" />
+
+        <MenuBar contents={menuContents} />
+        {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+        <h1 className={styles.screenReaderOnly}>
           이천 롯데캐슬 3차 - 청약안내
         </h1>
         <p className={styles.screenReaderOnly}>
-          이천 롯데캐슬 3차 민간임대 신청 안내 페이지에서는 모집 일정, 신청 자격 요건,
-          필요 서류와 신청 절차(온라인/현장 접수)를 확인할 수 있습니다.
-          접수 전 유의사항과 당첨자 발표·계약 절차를 사전에 숙지해
-          10년 안정 거주 후 분양전환(예정) 기회를 놓치지 마세요.
+          이천 롯데캐슬 3차의 인터넷 청약은 간편하고 신속하게 참여할 수 있는 방법입니다.
+          특별공급 및 1·2순위 접수 전 자격요건과 필요서류를 확인하고,
+          청약 절차를 단계별로 따라 안전하게 신청하세요.
         </p>
 
-        {/* 히어로 카피 */}
         <div className={styles.textBox}>
-          <div>임대 신청 절차와 일정을 확인하세요</div>
-          <div>이천 롯데캐슬 3차, 안정 거주의 시작</div>
+          <div>인터넷 청약 방법을 확인하세요</div>
+          <div>이천 롯데캐슬 3차, 기회를 놓치지 마세요</div>
         </div>
 
 
-      {/* 이미지 애니메이션 */}
+      {/* 이미지에 애니메이션 효과 추가 */}
       {/* <img
         className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
         src={page1}
-        alt="이천 롯데캐슬 3차 - 청약안내문 -image1"
-        onLoad={handleImageLoad}
+        alt="이천 롯데캐슬 3차- 청약안내문 -image1"
+        onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
       /> */}
+
       <Ready/>
+
+
 
       <div className={styles.commonBox2}>
         <div className={styles.notice}>
-          ※ 상기 이미지는 고객의 이해를 돕기 위한 것으로, 성공적인 청약 진행에 참고 자료로 제공됩니다.
+          ※ 상기 이미지는 고객의 이해를 돕기 위한 것으로 성공적인 청약을 위해
+          도움을 드리고있습니다.
         </div>
       </div>
-
 
       <Footer />
     </div>

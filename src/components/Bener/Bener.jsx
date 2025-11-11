@@ -39,19 +39,18 @@ const Bener = ({ title }) => {
 
 export default Bener;
 
-// 문구만 푸르지오자이 기준으로 전면 교체한 버전
-const contents = (text, isLoaded) => { 
-  if (text === '신영지웰' || text === '홍보영상' || text === '체크포인트' || text === '당첨자서류안내' || text === '이천 롯데캐슬 3차') {
+const contents = (text, isLoaded) => {
+  if (text === '두산위브' || text === '홍보영상' || text === '체크포인트' || text === '당첨자서류안내' || text === '이천 롯데캐슬 3차') {
     return (
       <>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          공원을 품은 민간임대, 청주 이천 롯데캐슬 3차.
+          하루의 무게를 내려놓는 순간, 본연으로 돌아가는 프리미엄.
         </div>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          터미널·홈플러스·순환로가 가까운 원스톱 생활 인프라.
+          이천 도심과 가까운 안흥지구 핵심 입지, 교통·생활 편의 모두 갖춘 프리미엄.
         </div>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          한양수자인의 브랜드 품질로 완성되는 프리미엄 라이프.
+          롯데건설 브랜드와 함께하는 이천 롯데캐슬 3차.
         </div>
       </>
     );
@@ -59,30 +58,27 @@ const contents = (text, isLoaded) => {
     return (
       <>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          청주시 흥덕구 가경동, 지하2층~지상29층 총 7개동 921세대(예정).
+          이천 신도심 생활권을 연결하는 롯데캐슬의 새로운 주거지.
         </div>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          전용 84㎡ 단일 구성(타입 다양화), 10년 민간임대 후 분양전환(예정).
+          중리택지지구와 중심상권, 우정·설봉 생활권을 아우르는 입지.
         </div>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          남향 위주 배치와 공원 조망 특화로 채광·통풍·개방감 극대화.
+          브랜드 가치와 함께 누리는 49층 스카이라인의 감동.
         </div>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          시공: 한양수자인(예정), 공원·주거 복합 특화로 안정 거주와 미래가치를 동시에.
+          이천 롯데캐슬 3차
         </div>
       </>
     );
-  } else if (text === '입지환경' || text === '프리미엄') {
+  } else if (text === '입지환경'|| text === '프리미엄') {
     return (
       <>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          홈플러스·고속/시외버스터미널·행정·의료·교육이 가까운 생활권.
+          교통·상권·공공 인프라가 집중된 이천 핵심 입지.
         </div>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          홍골공원 일체형 녹지, 산책로·근린공원으로 완성되는 쾌적한 일상.
-        </div>
-        <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          순환로·IC·BRT·KTX 오송 접근성으로 광역 교통 프리미엄.
+          터미널, 이마트, 이천시장, 설봉산, 시청과 도보권 생활환경을 누리세요.
         </div>
       </>
     );
@@ -90,31 +86,15 @@ const contents = (text, isLoaded) => {
     return (
       <>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          지상차량 최소화·대규모 조경의 공원형 단지, 공원과 바로 이어지는 동선.
+          이천 최고층 49층 랜드마크 단지의 스카이 프리미엄.
         </div>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          전용 84㎡ 중심 3개 타입 구성, 드레스룸·팬트리 등 수납 특화 설계.
+          설계부터 조경, 커뮤니티까지 세심하게 설계된 롯데캐슬 퀄리티.
         </div>
         <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          피트니스·실내골프·작은도서관·어린이집 등 커뮤니티 맞춤 계획.
-        </div>
-      </>
-    );
-  } else {
-    // 기타 탭 대비 기본 문구 (필요 시 조정 가능)
-    return (
-      <>
-        <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          이천 롯데캐슬 3차, 공원 속에서 누리는 새로운 주거 기준.
-        </div>
-        <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-          한양수자인이 제안하는 10년 안정 거주와 분양전환 기회.
+          이천 롯데캐슬 3차, 일상의 품격을 더하다.
         </div>
       </>
     );
   }
 };
-
-
-
-

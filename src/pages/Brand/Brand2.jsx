@@ -44,61 +44,60 @@ const Brand2 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-			<title>이천 롯데캐슬 3차 - 홍보영상</title>
-			<meta
-				name="description"
-				content="이천 롯데캐슬 3차 홍보영상: 홍골공원 특례사업, 총 7개동 921세대(전용 84㎡ 중심) 10년 민간임대 후 분양전환(예정). 공원 일체형 설계와 커뮤니티를 영상으로 확인하세요."
-			/>
-			<link rel="canonical" href="http://kf-liria.com/Brand/video" />
-			<meta name="robots" content="index,follow" />
+<Helmet>
+  <title>이천 롯데캐슬 3차 - 홍보영상</title>
+  <meta
+    name="description"
+    content="이천 롯데캐슬 3차 홍보영상으로 세대 설계, 지상 차 없는 공원형 단지, 커뮤니티 시설과 이천 도심 생활 인프라·광역 접근성을 생생하게 확인하세요."
+  />
+  <link rel="canonical" href="https://lotte-castl.co.kr/Brand/video" />
+  <meta name="robots" content="index,follow" />
 
-			{/* Open Graph */}
-			<meta property="og:type" content="website" />
-			<meta property="og:site_name" content="이천 롯데캐슬 3차" />
-			<meta property="og:title" content="이천 롯데캐슬 3차 - 홍보영상" />
-			<meta
-				property="og:description"
-				content="청주 가경동, 공원과 일상이 맞닿은 아파트. 7개동 921세대(전용 84㎡), 10년 민간임대 후 분양전환(예정), 한양수자인 커뮤니티까지 영상을 통해 만나보세요."
-			/>
-			<meta property="og:url" content="http://kf-liria.com/Brand/video" />
-			<meta property="og:image" content="http://kf-liria.com/images/og/main.jpg" />
+  {/* OG 태그 */}
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="이천 롯데캐슬 3차" />
+  <meta property="og:title" content="이천 롯데캐슬 3차 - 홍보영상" />
+  <meta
+    property="og:description"
+    content="이천 롯데캐슬 3차 홍보영상: 공원형 단지 설계, 커뮤니티, 이천 도심 인프라와 광역 접근성을 영상으로 만나보세요."
+  />
+  <meta property="og:url" content="https://lotte-castl.co.kr/Brand/video" />
+  <meta property="og:image" content="https://lotte-castl.co.kr/images/og/main.jpg" />
 
-			{/* Twitter */}
-			<meta name="twitter:card" content="summary_large_image" />
-			<meta name="twitter:title" content="이천 롯데캐슬 3차 - 홍보영상" />
-			<meta
-				name="twitter:description"
-				content="공원 특례·민간임대 프리미엄, 7개동 921세대와 한양수자인 커뮤니티를 담은 영상."
-			/>
-			<meta name="twitter:image" content="http://kf-liria.com/images/og/main.jpg" />
-			</Helmet>
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="이천 롯데캐슬 3차 - 홍보영상" />
+  <meta
+    name="twitter:description"
+    content="세대 설계와 커뮤니티, 공원형 단지와 이천 도심 인프라·접근성을 영상으로 확인하세요."
+  />
+  <meta name="twitter:image" content="https://lotte-castl.co.kr/images/og/main.jpg" />
+</Helmet>
 
-			<Header isChanged={isScroll} />
-			<FixIcon />
+<Header isChanged={isScroll} />
+<FixIcon />
 
-			<Bener title="홍보영상" />
+<Bener title="홍보영상" />
+<MenuBar contents={menuContents} />
 
-			<MenuBar contents={menuContents} />
+{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+<h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 홍보영상</h1>
+<p className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차의 홍보영상을 통해 공원형 단지 설계와 커뮤니티,
+  이천 도심의 생활 인프라와 광역 접근성을 생생하게 확인하세요.
+  현대적 감각과 편의성이 결합된 새로운 라이프스타일을 영상으로 만나보세요.
+</p>
 
-			{/* SEO: 접근성용 페이지 제목/보이스오버 텍스트 */}
-			<h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 홍보영상</h1>
-			<p className={styles.screenReaderOnly}>
-			이천 롯데캐슬 3차의 홍보영상을 통해 홍골공원 특례사업과 공원 일체형 설계, 총 7개동 921세대
-			전용 84㎡ 중심 구성, 한양수자인 커뮤니티 및 10년 민간임대 후 분양전환(예정) 혜택을 확인하세요.
-			</p>
-
-			{/* 히어로 카피 */}
-			<div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>
-			<div>공원과 일상이 이어지는 프리미엄</div>
-			<div>이천 롯데캐슬 3차, 민간임대의 새로운 기준</div>
-			</div>
+<div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>
+  <div>이천의 새로운 기준 위에</div>
+  <div>이천 롯데캐슬 3차가 자부심으로 찾아옵니다.</div>
+</div>
 
 
 
 			<div className={styles.videoContainer}>
 				<YouTube
-					videoId=""
+					videoId="uyyMsP_02Tg"
 					opts={{
 						width: isMobile ? "400" : "1300",
 						height: isMobile ? "300" : "500",

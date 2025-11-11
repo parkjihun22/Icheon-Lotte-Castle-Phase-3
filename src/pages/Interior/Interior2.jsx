@@ -11,18 +11,15 @@ import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 import { Helmet } from "react-helmet-async";
 
 
-// import page1 from "../../assets/Interior/Interior2/interior2.jpg";
-
+import page1 from "../../assets/Interior/Interior2/page1.jpg";
 import Ready from "../../components/Ready/Ready";
 
 
 
 const Interior2 = () => {
   const menuContents = [
-		{ title: "84A", url: "/Interior/59A" },
-		{ title: "84C", url: "/Interior/84A" },
-		// { title: "114A", url: "/Interior/84B" },
-
+    { title: "59A", url: "/Interior/59A" },
+    { title: "72B", url: "/Interior/84A" },
   ];
 
   const [isScroll, setIsScroll] = useState(false);
@@ -64,33 +61,29 @@ const Interior2 = () => {
       <Bener title="인테리어" />
 
       <MenuBar contents={menuContents} />
-    {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-    <h1 className={styles.screenReaderOnly}>
-      이천 롯데캐슬 3차 - 인테리어
-    </h1>
-    <p className={styles.screenReaderOnly}>
-      이천 롯데캐슬 3차 타입 인테리어는 넓은 거실과 오픈형 주방 설계,
-      고급 마감재, 수납 특화 공간이 돋보입니다. 안방 드레스룸, 팬트리, 발코니 확장 등
-      입주민의 라이프스타일에 최적화된 공간 구성을 경험하세요.
-    </p>
+      {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+      <h1 className={styles.screenReaderOnly}>
+        이천 롯데캐슬 3차 - 인테리어
+      </h1>
+      <p className={styles.screenReaderOnly}>
+        본 페이지에서는 이천 롯데캐슬 3차 84A 타입의 인테리어를 소개합니다.
+        공간 구성과 마감 재질, 수납·동선 등 디자인 포인트를 확인하고
+        거실·주방·침실·욕실별 컬러 패키지와 옵션 정보를 살펴보세요.
+      </p>
 
-    <div className={styles.textBox}>
-      <div>공간의 여유를 담은 </div>
-      <div>이천 롯데캐슬 3차, 프리미엄 인테리어로 완성하다</div>
-    </div>
-
-
+      <div className={styles.textBox}>
+        <div>이천의 새로운 기준 위에</div>
+        <div>이천 롯데캐슬 3차가 자부심으로 찾아옵니다.</div>
+      </div>
 
 
       {/* 이미지에 애니메이션 효과 추가 */}
-      {/* <img
+      <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="이천 롯데캐슬 3차 84D 인테리어 안내 이미지2"
+				alt="이천 롯데캐슬 3차84A 인테리어 안내 이미지"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
-			/> */}
-
-      <Ready/>
+			/>
 
 
       <div className={styles.commonBox2}>

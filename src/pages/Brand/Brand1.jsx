@@ -9,9 +9,7 @@ import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 
-// import page1 from "../../assets/Brand/intro/page1.jpg";
-
-import Ready from "../../components/Ready/Ready";
+import page1 from "../../assets/Brand/intro/page1.jpg";
 
 const Brand1 = () => {
     const menuContents = [{ title: "브랜드 소개", url: "/brand/intro" }, { title: "홍보 영상", url: "/brand/video" }];
@@ -49,55 +47,48 @@ const Brand1 = () => {
 
     return (
         <div className={styles.container}>
-                <Helmet>
-                <title>이천 롯데캐슬 3차 - 브랜드 소개</title>
-                <meta
-                    name="description"
-                    content="한양수자인의 브랜드 철학과 가치. 검증된 시공 역량과 공원 일체형 설계로 입주민의 생활 품격을 높입니다."
-                />
-                {/* 권장: 캠페인 파라미터 제거한 정규화 URL 사용 */}
-                <link rel="canonical" href="https://arbore-cheongju.com/brand/intro" />
-                <meta name="robots" content="index,follow" />
+<Helmet>
+  <title>이천 롯데캐슬 3차 - 브랜드 소개</title>
+  <meta
+    name="description"
+    content="롯데건설 롯데캐슬(CASTLE)의 브랜드 철학과 가치를 소개합니다. 프리미엄 품질 기준과 첨단 시스템, 커뮤니티 설계로 미래의 주거 가치를 제시하는 이천 롯데캐슬 3차."
+  />
+  <link rel="canonical" href="https://lotte-castl.co.kr/Brand/intro" />
+  <meta name="robots" content="index,follow" />
 
-                {/* Open Graph */}
-                <meta property="og:type" content="website" />
-                <meta property="og:site_name" content="이천 롯데캐슬 3차" />
-                <meta property="og:title" content="이천 롯데캐슬 3차 - 브랜드 소개" />
-                <meta
-                    property="og:description"
-                    content="한양수자인 브랜드 소개: 고객 중심 철학과의 프리미엄 품질 기준, 공원 특화 설계로 완성하는 새로운 주거 기준."
-                />
-                <meta property="og:url" content="https://arbore-cheongju.com/brand/intro" />
-                {/* 이미지 경로는 실제 배포 경로에 맞게 교체 권장 */}
-                <meta property="og:image" content="https://arbore-cheongju.com/images/og/main.jpg" />
-                </Helmet>
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="이천 롯데캐슬 3차" />
+  <meta property="og:title" content="이천 롯데캐슬 3차 - 브랜드 소개" />
+  <meta
+    property="og:description"
+    content="롯데캐슬 브랜드 소개: 프리미엄 주거문화와 고객 중심 설계, 고급 자재·첨단 시스템을 담은 이천 롯데캐슬 3차의 철학을 소개합니다."
+  />
+  <meta property="og:url" content="https://lotte-castl.co.kr/Brand/intro" />
+  <meta property="og:image" content="https://lotte-castl.co.kr/images/og/main.jpg" />
+</Helmet>
 
-                <Header isChanged={isScroll} />
-                <FixIcon />
+<Header isChanged={isScroll} />
+<FixIcon />
 
-                {/* 배너 타이틀도 브랜드명으로 교체 */}
-                <Bener title="이천 롯데캐슬 3차" />
+<Bener title="브랜드 소개" />
+<MenuBar contents={menuContents} />
 
-                <MenuBar contents={menuContents} />
+{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+<h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 브랜드 소개</h1>
+<p className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차는 프리미엄 주거 브랜드 롯데캐슬(CASTLE)을 적용한 주거 단지입니다.
+  고객 중심의 설계, 고급 마감재, 첨단 시스템으로 차별화된 주거 품격을 갖추었습니다.
+  롯데건설의 신뢰와 기술력으로 완성된 이천 롯데캐슬 3차는 미래 지향적인 주거 가치를 제시합니다.
+</p>
 
-                {/* SEO: 메인 페이지 타이틀/보이스오버 텍스트 업데이트 */}
-                <h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 브랜드 소개</h1>
-                <p className={styles.screenReaderOnly}>
-                한양수자인은 신뢰와 품질을 바탕으로 한 주거 브랜드입니다. 검증된 시공 역량과 세심한 설계,
-                공원 일체형 단지 계획으로 프리미엄 주거 환경을 제공합니다. 고객 중심 철학과 지속 가능한
-                혁신으로 미래 지향적 주거 가치를 제시합니다.
-                </p>
-
-                {/* 히어로 카피 교체 */}
-                <div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>
-                <div>공원과 일상이 이어지는 곳</div>
-                <div>이천 롯데캐슬 3차, 새로운 주거 기준</div>
-                </div>
+<div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>
+  <div>생활의 모든 것을 한걸음에</div>
+  <div>롯데캐슬, 이천의 중심에 서다</div>
+</div>
 
 
-
-            {/* <img className={`${styles.image} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="이천 롯데캐슬 3차 brand-Image1" /> */}
-            <Ready/>
+            <img className={`${styles.image} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="이천 롯데캐슬 3차brand-Image1" />
 
             <Footer />
         </div>

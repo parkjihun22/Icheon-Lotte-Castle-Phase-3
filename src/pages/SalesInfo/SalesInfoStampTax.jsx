@@ -12,15 +12,12 @@ import { Helmet } from "react-helmet-async";
 import Ready from "../../components/Ready/Ready";
 
 
-
-
-
 const ComplexGuide1 = () => {
   const menuContents = [
-    { title: "공급안내", url: "/SalesInfo/guide" },
-    // { title: "정당계약안내문", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "청약방법안내", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "청약안내문", url: "/SalesInfo/guide" },
     { title: "모집공고안내", url: "/SalesInfo/announcement" },
-    // { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
+    { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
   ];
 
   const [isScroll, setIsScroll] = useState(false);
@@ -55,42 +52,52 @@ const ComplexGuide1 = () => {
   return (
     <div className={styles.container}>
 
+
+        <Helmet>
+          <title>이천 롯데캐슬 3차 - 인지세 납부 안내</title>
+          <meta
+            name="description"
+            content="이천 롯데캐슬 3차 분양(계약) 시 필요한 인지세 납부 기준과 절차, 금액 및 유의사항을 한눈에 확인하세요."
+          />
+          <link rel="canonical" href="https://lotte-castl.co.kr/SalesInfo/stampTax" />
+          <meta name="robots" content="index,follow" />
+        </Helmet>
+
+
+
+
       <Header isChanged={isScroll} />
       <FixIcon />
 
-      <Bener title="인지세 납부 안내" />
+      <Bener title="청약안내" />
 
       <MenuBar contents={menuContents} />
+      {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+      <h1 className={styles.screenReaderOnly}>
+        이천 롯데캐슬 3차- 인지세안내
+      </h1>
+      <p className={styles.screenReaderOnly}>
+        이천 롯데캐슬 3차의 인지세 안내 페이지는 분양과 관련된 세금
+        정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를
+        사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산
+        방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수
+        있도록 돕습니다.
+      </p>
 
-        {/* SEO: 페이지 제목/설명 */}
-        <h1 className={styles.screenReaderOnly}>
-          이천 롯데캐슬 3차 - 인지세 납부 안내
-        </h1>
-        <p className={styles.screenReaderOnly}>
-          이천 롯데캐슬 3차 인지세 납부 안내 페이지에서는 분양계약 시 발생하는 인지세 정보를 제공합니다.
-          인지세는 계약서 작성 시 부과되는 세금으로, 세액 산정 기준과 납부 절차를 사전에 확인하는 것이 중요합니다.
-          본 안내에서는 인지세 금액, 납부 방법, 제출 기한 및 유의사항을 상세히 설명하여,
-          계약자가 혼동 없이 준비할 수 있도록 돕습니다.
-        </p>
-
-        {/* 히어로 카피 */}
-        <div className={styles.textBox}>
-          <div>분양계약 전 꼭 확인해야 할 세금</div>
-          <div>이천 롯데캐슬 3차, 인지세 납부 가이드</div>
-        </div>
-
+      <div className={styles.textBox}>
+        <div>인터넷 청약하는 방법을 확인하세요</div>
+        <div>소수만 누리는 프리미엄 이천 롯데캐슬 3차</div>
+      </div>
 
       {/* 이미지에 애니메이션 효과 추가 */}
       {/* <img
         className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
         src={page1}
-        alt="이천 롯데캐슬 3차 인지세 납부 안내 이미지"
-        onLoad={handleImageLoad}
+        alt="이천 롯데캐슬 3차인지세안내-image1"
+        onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
       /> */}
 
       <Ready/>
-
-
 
 
       <div className={styles.commonBox2}>

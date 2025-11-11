@@ -11,17 +11,14 @@ import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 import { Helmet } from "react-helmet-async";
 
 // 이미지 파일을 추가해야 합니다
-// import page1 from "../../assets/Interior/Interior3/interior3.jpg";
-
+//import page1 from "../../assets/Interior/Interior3/page1.jpg";
 import Ready from "../../components/Ready/Ready";
-
 
 const Interior3 = () => {
 	const menuContents = [
 		{ title: "84A", url: "/Interior/59A" },
-		{ title: "84C", url: "/Interior/84A" },
-		// { title: "114A", url: "/Interior/84B" },
-	
+		{ title: "119A", url: "/Interior/84A" },
+		{ title: "119B", url: "/Interior/84B" },
 	];	
 
 	const [isScroll, setIsScroll] = useState(false);
@@ -64,20 +61,19 @@ const Interior3 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-          <div>일상이 더 넓어지는 </div>
-          <div>이천 롯데캐슬 3차, 프리미엄 인테리어를 만나보세요.</div>
-        </div>
-
+				<div>강화의 새로운 기준 위에</div>
+				<div>이천 롯데캐슬 3차가 자부심으로 찾아옵니다.</div>
+			</div>
 
 			{/* 이미지에 애니메이션 효과 추가 */}
-			{/* <img
+			{/*<img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="이천 롯데캐슬 3차 인테리어 안내 이미지3"
+				alt="이천 롯데캐슬 3차119타입 인테리어안내 image"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
-			/> */}
+			/>*/}
 
-			<Ready/>
+			<Ready />
 
 			<div className={styles.commonBox2}>
 				<div className={styles.notice}>

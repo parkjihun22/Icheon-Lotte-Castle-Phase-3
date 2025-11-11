@@ -14,7 +14,6 @@ import page1 from "../../assets/ComplexGuide/ComplexGuide2/page1.webp";
 
 
 
-
 const ComplexGuide1 = () => {
   const menuContents = [
     { title: "단지 배치도", url: "/ComplexGuide/intro" },
@@ -52,57 +51,52 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
-    <Helmet>
-      <title>이천 롯데캐슬 3차 - 호수배치도</title>
-      <meta
-        name="description"
-        content="이천 롯데캐슬 3차 호수배치도: 세대별 위치·전망·일조(남향 위주)와 프라이버시 고려 배치를 확인하세요. 공원 조망과 타입별 특성을 비교해 나에게 맞는 동·호수를 선택하세요."
-      />
-      <link rel="canonical" href="http://kf-liria.com/ComplexGuide/detailintro" />
-      <meta name="robots" content="index,follow" />
+<Helmet>
+  <title>이천 롯데캐슬 3차 - 동·호수 배치</title>
+  <meta
+    name="description"
+    content="이천 롯데캐슬 3차 동·호수 배치도를 통해 세대별 위치, 조망, 일조 방향, 프라이버시 고려 설계를 확인하세요. 라인·스택 구성과 코어 동선도 안내합니다."
+  />
+  <link rel="canonical" href="https://lotte-castl.co.kr/ComplexGuide/detailintro" />
+  <meta name="robots" content="index,follow" />
 
-      {/* Open Graph */}
-      <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="이천 롯데캐슬 3차" />
-      <meta property="og:title" content="이천 롯데캐슬 3차 - 호수배치도" />
-      <meta
-        property="og:description"
-        content="이천 롯데캐슬 3차 호수배치도: 공원 조망 특화, 남향 위주 일조, 프라이버시 동·호수 배치 정보를 한눈에."
-      />
-      <meta property="og:url" content="http://kf-liria.com/ComplexGuide/detailintro" />
-      <meta property="og:image" content="http://kf-liria.com/img/og/complex.jpg" />
-      {/* 선택: 이미지 규격 명시
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" /> */}
-    </Helmet>
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="이천 롯데캐슬 3차" />
+  <meta property="og:title" content="이천 롯데캐슬 3차 - 동·호수 배치" />
+  <meta
+    property="og:description"
+    content="세대별 위치, 조망·일조, 프라이버시를 고려한 동·호수 배치를 확인하세요. 라인·스택 구성과 코어 동선도 한눈에 확인 가능합니다."
+  />
+  <meta property="og:url" content="https://lotte-castl.co.kr/ComplexGuide/detailintro" />
+  <meta property="og:image" content="https://lotte-castl.co.kr/img/og/complex.jpg" />
+</Helmet>
 
-    <Header isChanged={isScroll} />
-    <FixIcon />
-    <Bener title="호수배치도" />
-    <MenuBar contents={menuContents} />
+<Header isChanged={isScroll} />
+<FixIcon />
+<Bener title="단지안내" />
+<MenuBar contents={menuContents} />
 
-    {/* SEO: 페이지 제목/설명 */}
-    <h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 호수배치도</h1>
-    <p className={styles.screenReaderOnly}>
-      본 페이지에서는 이천 롯데캐슬 3차의 동·호수별 위치와 평면 배치를 제공합니다.
-      남향 위주 일조와 공원 조망 가능 라인, 코너·판상 등의 타입 특성, 프라이버시와 채광을 비교해
-      나에게 맞는 세대를 선택할 수 있도록 돕습니다.
-    </p>
+<h1 className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차 - 동·호수 배치
+</h1>
+<p className={styles.screenReaderOnly}>
+  본 페이지는 이천 롯데캐슬 3차의 동·호수 배치 정보를 제공합니다.
+  세대별 위치와 조망, 일조, 프라이버시를 고려한 설계, 라인·스택 구성,
+  코어(엘리베이터·계단) 동선 등을 확인하고 원하는 호수를 빠르게 비교해보세요.
+</p>
 
-    {/* 히어로 카피 */}
-    <div className={styles.textBox}>
-      <div>일조·조망·프라이버시, 한눈에 비교</div>
-      <div>이천 롯데캐슬 3차, 나에게 맞는 동·호수를 선택하세요</div>
-    </div>
-
-
+<div className={styles.textBox}>
+  <div>이천의 새로운 기준 위에</div>
+  <div>이천 롯데캐슬 3차가 자부심으로 찾아옵니다.</div>
+</div>
 
 
       {/* 이미지에 애니메이션 효과 추가 */}
       <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="이천 롯데캐슬 3차 호수배치도-image1"
+				alt="이천 롯데캐슬 3차호수배치도-image1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/>
 

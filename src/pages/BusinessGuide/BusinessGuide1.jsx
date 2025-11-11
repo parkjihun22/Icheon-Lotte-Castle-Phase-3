@@ -13,21 +13,20 @@ import { Helmet } from "react-helmet-async";
 
 
 
+
 const projectData = [
 	{ label: '사업명', value: '이천 롯데캐슬 3차' },
-	{ label: '사업위치', value: '충청북도 청주시 흥덕구 가경동 일원' },
-	{ label: '대지면적', value: '추후 공고(홍골공원 특례사업 부지 내)' },
-	{ label: '건축면적', value: '추후 공고' },
-	{ label: '연면적', value: '추후 공고' },
-	{ label: '용적률', value: '추후 공고' },
-	{ label: '건폐율', value: '추후 공고' },
-	{ label: '건축규모', value: '지하 2층 ~ 지상 29층, 7개동(예정)' },
-	{ label: '세대수', value: '총 921세대, 10년 민간임대 후 분양전환(예정)' },
-	{ label: '주차대수', value: '약 1,400대(세대당 약 1.5대, 예정)' },
-	{ label: '주택형', value: '전용 84㎡ 단일(타입 다양화 예정)' },
+	{ label: '사업위치', value: '경기도 이천시 중리동 일원' },
+	{ label: '대지면적', value: '추후 공지' },
+	{ label: '건축면적', value: '추후 공지' },
+	{ label: '연면적', value: '추후 공지' },
+	{ label: '용적률', value: '추후 공지' },
+	{ label: '건축규모', value: '지하 2층 ~ 지상 25층, 총 21개동' },
+	{ label: '세대수', value: '총 1,325세대 (일반분양 371세대 포함)' },
   ];
   
   
+
 const BusinessGuide1 = () => {
 	const menuContents = [
 		{ title: "사업안내", url: "/BusinessGuide/intro" },
@@ -61,86 +60,84 @@ const BusinessGuide1 = () => {
 	return (
 		<div className={styles.container}>
 
-			<Helmet>
-			{/* 페이지별 메타: title/description/og/canonical 만 관리 */}
-			<title>이천 롯데캐슬 3차 - 사업안내</title>
-			<meta
-				name="description"
-				content="이천 롯데캐슬 3차 특례사업 내 공원 일체형 단지. 지하2~지상29층 7개 동 921세대(전용 84㎡ 중심), 10년 민간임대 후 분양전환(예정). 입지·사업 개요를 확인하세요."
-			/>
-			<meta name="robots" content="index,follow" />
-			<link rel="canonical" href="http://kf-liria.com/BusinessGuide/intro" />
+<Helmet>
+  {/* 페이지별 메타: title/description/og/canonical 만 관리 */}
+  <title>이천 롯데캐슬 3차 - 사업안내</title>
+  <meta
+    name="description"
+    content="경기도 이천시 증포동 일원에 들어서는 이천 롯데캐슬 3차의 사업 개요를 확인하세요. 총 1,325세대(지하 2층~지상 25층, 21개동), 전용 84A·84B·84C·122㎡ 구성, 입지·규모·입주(예정) 정보 안내."
+  />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://lotte-castl.co.kr/BusinessGuide/intro" />
 
-			{/* Open Graph */}
-			<meta property="og:type" content="website" />
-			<meta property="og:site_name" content="이천 롯데캐슬 3차" />
-			<meta property="og:title" content="이천 롯데캐슬 3차 - 사업안내" />
-			<meta
-				property="og:description"
-				content="공원 특례·민간임대 프리미엄. 7개동 921세대(전용 84㎡ 중심), 공원 조망 특화·보행 중심 설계, 한양수자인 커뮤니티까지 한눈에."
-			/>
-			<meta property="og:url" content="http://kf-liria.com/BusinessGuide/intro" />
-			<meta property="og:image" content="http://kf-liria.com/img/og/business.jpg" />
-			<meta property="og:image:width" content="1200" />
-			<meta property="og:image:height" content="630" />
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="이천 롯데캐슬 3차" />
+  <meta property="og:title" content="이천 롯데캐슬 3차 - 사업안내" />
+  <meta
+    property="og:description"
+    content="이천 도심 중심의 브랜드 대단지. 총 1,325세대, 전용 84A·84B·84C·122㎡ 구성. 위치·규모·타입·입주 정보를 확인하세요."
+  />
+  <meta property="og:url" content="https://lotte-castl.co.kr/BusinessGuide/intro" />
+  <meta property="og:image" content="https://lotte-castl.co.kr/img/og/business.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-			{/* Twitter */}
-			<meta name="twitter:card" content="summary_large_image" />
-			<meta name="twitter:title" content="이천 롯데캐슬 3차 - 사업안내" />
-			<meta
-				name="twitter:description"
-				content="청주 가경동 공원 일체형 단지, 7개동 921세대 민간임대(분양전환 예정). 입지·사업 핵심 정보를 확인하세요."
-			/>
-			<meta name="twitter:image" content="http://kf-liria.com/img/og/business.jpg" />
-			<meta name="twitter:url" content="http://kf-liria.com/BusinessGuide/intro" />
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="이천 롯데캐슬 3차 - 사업안내" />
+  <meta
+    name="twitter:description"
+    content="이천 롯데캐슬 3차 사업 개요: 총 1,325세대, 전용 84A·84B·84C·122㎡ 구성, 도심 중심 입지와 규모·일정 정보 안내."
+  />
+  <meta name="twitter:image" content="https://lotte-castl.co.kr/img/og/business.jpg" />
+  <meta name="twitter:url" content="https://lotte-castl.co.kr/BusinessGuide/intro" />
 
-			{/* JSON-LD (대표 이미지/브레드크럼 포함) */}
-			<script type="application/ld+json">
-				{JSON.stringify({
-				"@context": "https://schema.org",
-				"@type": "WebPage",
-				name: "이천 롯데캐슬 3차 - 사업안내",
-				url: "http://kf-liria.com/BusinessGuide/intro",
-				description:
-					"충북 청주시 흥덕구 가경동 일원, 지하2~지상29층 7개 동 921세대(전용 84㎡ 중심). 10년 민간임대 후 분양전환(예정). 공원 특례 기반의 공원 일체형 설계와 편리한 생활 인프라를 갖춘 사업 개요와 입지 정보.",
-				primaryImageOfPage: {
-					"@type": "ImageObject",
-					contentUrl: "http://kf-liria.com/img/og/business.jpg",
-					width: 1200,
-					height: 630
-				},
-				breadcrumb: {
-					"@type": "BreadcrumbList",
-					itemListElement: [
-					{ "@type": "ListItem", position: 1, name: "홈", item: "http://kf-liria.com/" },
-					{ "@type": "ListItem", position: 2, name: "사업안내", item: "http://kf-liria.com/BusinessGuide/intro" }
-					]
-				}
-				})}
-			</script>
-			</Helmet>
+  {/* JSON-LD (대표 이미지/브레드크럼 포함) */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "이천 롯데캐슬 3차 - 사업안내",
+      "url": "https://lotte-castl.co.kr/BusinessGuide/intro",
+      "description":
+        "경기도 이천시 증포동 일원에 들어서는 이천 롯데캐슬 3차의 사업 개요와 위치, 규모, 타입 구성, 입주(예정) 정보를 제공합니다.",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "https://lotte-castl.co.kr/img/og/business.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://lotte-castl.co.kr/" },
+          { "@type": "ListItem", "position": 2, "name": "사업안내", "item": "https://lotte-castl.co.kr/BusinessGuide/intro" }
+        ]
+      }
+    })}
+  </script>
+</Helmet>
 
-			<Header isChanged={isScroll} />
-			<FixIcon />
+<Header isChanged={isScroll} />
+<FixIcon />
 
-			<Bener title="사업개요" />
+<Bener title="사업개요" />
 
-			<MenuBar contents={menuContents} />
+<MenuBar contents={menuContents} />
 
-			{/* SEO: 페이지 제목/설명 (스크린리더용) */}
-			<h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 사업안내</h1>
-			<p className={styles.screenReaderOnly}>
-			이천 롯데캐슬 3차는 충북 청주시 흥덕구 가경동 일원에 들어서는
-			지하 2층부터 지상 29층까지 7개 동, 총 921세대(전용 84㎡ 중심)의 민간임대 아파트입니다.
-			공원 특례 기반의 공원 일체형 설계와 한양수자인 커뮤니티를 갖추었으며,
-			10년 안정 거주 후 분양전환(예정) 혜택을 제공합니다.
-			</p>
+{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+<h1 className={styles.screenReaderOnly}>이천 롯데캐슬 3차 - 사업안내</h1>
+<p className={styles.screenReaderOnly}>
+  이천 롯데캐슬 3차는 이천 도심 생활권에 조성되는 브랜드 대단지입니다.
+  이 페이지에서는 위치와 규모, 전용 84A·84B·84C·122㎡ 타입 구성, 특화 설계와 주변 인프라 등
+  사업의 핵심 정보를 안내합니다.
+</p>
 
-			{/* 히어로 카피 */}
-			<div className={styles.textBox}>
-			<div>공원과 일상이 맞닿는 프리미엄</div>
-			<div>이천 롯데캐슬 3차, 민간임대의 새로운 기준</div>
-			</div>
+<div className={styles.textBox}>
+  <div>이천 도심 프리미엄 라이프</div>
+  <div>이천 롯데캐슬 3차, 새로운 주거 중심을 만듭니다.</div>
+</div>
 
 
 
